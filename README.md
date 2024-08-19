@@ -50,10 +50,40 @@
    </p>
 
 
-## ✧✧Kerm Deployment  
+## ✧✧DEPLOY TO HEROKU 
 <a href="https://maria-pair.koyeb.app/deploy.html"><img title="Deploy Maria-MD  " src="https://img.shields.io/badge/DEPLOY HEROKU-h?color=black&style=for-the-badge&logo=heroku"></a>
 
 
+#### ♔♔DEPLOY TO RENDER 
+
+1. If You don't have a account in render. Create a account.
+    <br>
+<a href='https://dashboard.render.com/register' target="_blank"><img alt='render' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=render&logoColor=white'/></a>
+
+3. Get [DATABASE_URL](https://github.com/A-d-i-t-h-y-a-n/hermit-md/wiki/DATABASE_URL) and copy it
+
+4. Get [Render api key](https://dashboard.render.com/u/settings#api-keys)
+
+2. Now Deploy
+    <br>
+<a href='https://render.com/deploy?repo=https://github.com/A-d-i-t-h-y-a-n/hermit-md' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=render&logoColor=white'/>
+</a>
+
+#### DEPLOY TO KOYEB 
+
+1. If You don't have a account in koyeb. Create a account.
+    <br>
+<a href='https://app.koyeb.com/auth/signup' target="_blank"><img alt='koyeb' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
+
+3. Get [DATABASE_URL](https://github.com/A-d-i-t-h-y-a-n/hermit-md/wiki/DATABASE_URL) and copy it
+
+4. Get [Koyeb api key](https://app.koyeb.com/account/api)
+
+2. Now Deploy
+    <br>
+<a href='https://hermit.koyeb.app/deploy-koyeb' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white'/>
+
+</a>
 
 
 ### ✧✧ Follow this Tutorial for Maria's  error free and safe Deployment 
