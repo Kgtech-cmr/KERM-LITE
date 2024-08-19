@@ -50,7 +50,7 @@
    </p>
 
 
-## ✧✧DEPLOY TO HEROKU 
+  #### ✧✧DEPLOY TO HEROKU
 <a href="https://maria-pair.koyeb.app/deploy.html"><img title="Deploy Maria-MD  " src="https://img.shields.io/badge/DEPLOY HEROKU-h?color=black&style=for-the-badge&logo=heroku"></a>
 
 
@@ -66,7 +66,7 @@
 
 2. Now Deploy
     <br>
-<a href='https://render.com/deploy?repo=https://github.com/A-d-i-t-h-y-a-n/hermit-md' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=render&logoColor=white'/>
+<a href='https://render.com/deploy?repo=https://github.com/Kgtech-cmr/KERM-LITE-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=render&logoColor=white'/>
 </a>
 
 #### DEPLOY TO KOYEB 
@@ -81,7 +81,7 @@
 
 2. Now Deploy
     <br>
-<a href='https://hermit.koyeb.app/deploy-koyeb' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white'/>
+<a href='https://kerm.koyeb.app/deploy-koyeb' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white'/>
 
 </a>
 
