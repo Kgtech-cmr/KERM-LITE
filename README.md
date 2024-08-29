@@ -11,7 +11,9 @@
 1. Education menu added✅️
 2.  Coding menu added ✅️
 3.  Wallpaper menu added✅️
-4.  game menu added ✅️
+4.  Game menu added ✅️
+5. Download music added✅
+6. Gpt added✅
 🔻More features and improvements!
 
 -KgTech
