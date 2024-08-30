@@ -24,7 +24,7 @@ bot.addCommand(
     })
     const [date, time] = getDate()
     let CMD_HELP = `╭────────────────╮
-						ʟᴇᴠᴀɴᴛᴇʀ
+   ᴋᴇʀᴍ-ʟɪᴛᴇ-ᴍᴅ
 ╰────────────────╯
 
 ╭────────────────
@@ -93,7 +93,7 @@ bot.addCommand(
       }
     })
     const [date, time] = getDate()
-    let msg = `\`\`\`╭═══ LEVANTER ═══⊷
+    let msg = `\`\`\`╭═══ 𝐊𝐄𝐑𝐌-𝐋𝐈𝐓𝐄-𝐌𝐃 ═══⊷
 ┃❃╭──────────────
 ┃❃│ Prefix : ${PREFIX}
 ┃❃│ User : ${message.pushName}
@@ -111,7 +111,7 @@ bot.addCommand(
     if (match && commands[match]) {
       msg += ` ╭─❏ ${textToStylist(match.toLowerCase(), 'smallcaps')} ❏\n`
       for (const plugin of commands[match])
-        msg += ` │ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
+        msg += ` 🇨🇲 ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
       msg += ` ╰─────────────────`
 
       return await message.send(msg)
@@ -119,7 +119,7 @@ bot.addCommand(
     for (const command in commands) {
       msg += ` ╭─❏ ${textToStylist(command.toLowerCase(), 'smallcaps')} ❏\n`
       for (const plugin of commands[command])
-        msg += ` │ ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
+        msg += ` 🇨🇲 ${textToStylist(plugin.toUpperCase(), 'mono')}\n`
       msg += ` ╰─────────────────\n`
     }
     await message.send(msg.trim())
