@@ -18,7 +18,7 @@ bot(
       const mention = await getMention()
       const onOrOff = mention && mention.enabled ? 'on' : 'off'
       return await message.send(
-        `Mention is ${onOrOff}\n\nhttps://github.com/lyfe00011/levanter/wiki/mention_example`
+        `Mention is ${onOrOff}\n\nhttps://github.com/kgtech-cmr/KERM-LITE-MD/wiki/mention_example`
       )
 
       // const button = await genButtonMessage(
