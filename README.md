@@ -42,7 +42,7 @@ Go copy the workflows on v2
    <br>
 2. Now Deploy
     <br>
-<a href='https://heroku.com/deploy?template=https://github.com/Kgtech-cmr/KERM_MD-v2' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku'/></a>
+<a href='https://heroku.com/deploy?template=https://github.com/Kgtech-cmr/KERM-LITE-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku'/></a>
 #### DEPLOY TO RENDER 
 
 1. Now Deploy
