@@ -51,7 +51,7 @@
     "LANGUAG": {
       "description": "Default Language for tts or trt",
       "required": false,
-      "value": "en"
+      "value": "fr"
     },
     "WARN_LIMIT": {
       "description": "Maximum number of wanings to a person.",
