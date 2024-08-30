@@ -1,175 +1,139 @@
-<a href="https://ibb.co/pQNpmwN"><img src="https://telegra.ph/file/dfd70d0201f2364e67018.png" alt="Kerm-lite" border="0"></a>
-<h1 align="center">⭐Kerm-Lite-Md⭐<br></h1>
-<p align="center"> 
-  I am "Kerm lite Md " a WhatsApp bot made by Kg Tech to do everything that is possible on WhatsApp based on WhatsApp Multi Device(MD) Support.
-</p>
+# WhatsApp MD User Bot
 
-</br>
-## ✧✧✧ What' new v2.0?
+A simple WhatsApp User bot.
 
-```
-1. Education menu added✅️
-2.  Coding menu added ✅️
-3.  Wallpaper menu added✅️
-4.  Game menu added ✅️
-5. Download music added✅
-6. Gpt added✅
-🔻More features and improvements!
+## Setup
 
--KgTech
-```
-</br>
+### 1. Deploy on Heroku
 
-## ✧✧ Connect With Me
+1. **Scan QR Code:**
+   - Click [SCAN](https://qr-hazel-alpha.vercel.app/md) and scan the QR code through the "WhatsApp Linked Devices" option in your WhatsApp app.
+   - You will get a session ID in WhatsApp; copy the ID only.
 
-<p align="center">
+2. **Create Accounts:**
+   - If you don't have an account on [Heroku](https://signup.heroku.com/), [create an account now](https://signup.heroku.com/).
+   - If you don't have a GitHub account, [sign up](https://github.com/join) now.
 
-<a href="https://whatsapp.com/channel/0029Vafn6hc7DAX3fzsKtn45"><img src="https://img.shields.io/badge/follow channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+3. **Fork Repository:**
+   - [FORK](https://github.com/lyfe00011/levanter/fork) this repository.
 
-</p>
+4. **Deploy:**
+   - Now [DEPLOY](https://qr-hazel-alpha.vercel.app/heroku).
 
-## ✧✧Bot Support Groups
-<p align="center">
+### 2. Deploy on Koyeb
 
-<a href="https://chat.whatsapp.com/FpxvVBFOozA6IhNxIWhwFw"><img src="https://img.shields.io/badge/Join support group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+1. **Create an Account:**
+   - Create an account on [Koyeb](https://app.koyeb.com/auth/signup). [Sign up now](https://app.koyeb.com/auth/signup).
 
-</p>
+2. **Get Required Information:**
+   - Get the [DATABASE_URL](https://github.com/lyfe00011/levanter/wiki/DATABASE_URL). You'll need this while deploying.
+   - Get the [SESSION_ID](https://qr-hazel-alpha.vercel.app/md). Open Linked Devices in WhatsApp and [SCAN](https://qr-hazel-alpha.vercel.app/md) now.
+   - Get the Koyeb API key. [Let's Go](https://app.koyeb.com/account/api).
 
+3. **Deploy:**
+   - [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://qr-hazel-alpha.vercel.app/koyeb)
+   - Enter [Environment Variables](https://github.com/lyfe00011/levanter/wiki/Environment_Variables). [Read More](https://github.com/lyfe00011/levanter/wiki/Environment_Variables).
+   - Enter a name and click "Create Service."
 
+### 3. Deploy on VPS or PC (Example here as in Ubuntu)
 
-### ✧✧SETUP Kerm-Lite
+#### Install with Script
 
-  
-1. Fork The Repo
-    <br>
-    <a href="https://github.com/Kgtech-cmr/KERM-LITE-MD/fork"><img title="Kerm-Lite" src="https://img.shields.io/badge/FORK KERM-LITE-h?color=black&style=for-the-badge&logo=stackshare"></a>
+- Run the following command:
+  ```sh
+  bash <(curl -fsSL http://bit.ly/43JqREw)
+  ```
 
-2. Pair with WhatsApp 
-   <p align="left">
-       <a href="https://kerm-session-generator-iqos.onrender.com">
-         <img src="https://play-lh.googleusercontent.com/901aMQFFnVoX2T-YuJmTIwpPve_SUgMv_QSyzMSPtAqt_l0CyXN1DxfD6xXU0r2f9iM=w240-h480-rw" width="90" />
-       </a>
-   </p>
+#### Install without Script
 
+1. **Install Git, ffmpeg, and curl:**
+   ```sh
+   sudo apt -y update && sudo apt -y upgrade
+   sudo apt -y install git ffmpeg curl
+   ```
 
-  #### ✧✧DEPLOY TO HEROKU
-<a href="https://maria-pair.koyeb.app/deploy.html"><img title="Deploy Maria-MD  " src="https://img.shields.io/badge/DEPLOY HEROKU-h?color=black&style=for-the-badge&logo=heroku"></a>
+2. **Install Node.js:**
+   ```sh
+   curl -fsSL https://deb.nodesource.com/setup_20.x -o nodesource_setup.sh
+   sudo -E bash nodesource_setup.sh
+   sudo apt-get install -y nodejs
+   ```
 
+3. **Install Yarn:**
+   ```sh
+   sudo npm install -g yarn
+   ```
 
-#### ♔♔DEPLOY TO RENDER 
+4. **Install pm2:**
+   ```sh
+   sudo yarn global add pm2
+   ```
 
-1. If You don't have a account in render. Create a account.
-    <br>
-<a href='https://dashboard.render.com/register' target="_blank"><img alt='render' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=render&logoColor=white'/></a>
+5. **Clone Repository and Install Packages:**
+   ```sh
+   git clone https://github.com/lyfe00011/levanter botName
+   cd botName
+   yarn install
+   ```
 
-3. Get [DATABASE_URL](https://github.com/A-d-i-t-h-y-a-n/hermit-md/wiki/DATABASE_URL) and copy it
+6. **Enter Environment Variables:**
+   ```sh
+   echo "SESSION_ID = Session_Id_you_Got_After_Scan_Dont_Add_This_Line_If_You_Can_Scan_From_Terminal_Itself
+   PREFIX = .
+   STICKER_PACKNAME = LyFE
+   ALWAYS_ONLINE = false
+   RMBG_KEY = null
+   LANGUAG = en
+   WARN_LIMIT = 3
+   FORCE_LOGOUT = false
+   BRAINSHOP = 159501,6pq8dPiYt7PdqHz3
+   MAX_UPLOAD = 200
+   REJECT_CALL = false
+   SUDO = 989876543210
+   TZ = Asia/Kolkata
+   VPS = true
+   AUTO_STATUS_VIEW = true
+   SEND_READ = true
+   AJOIN = true
+   DISABLE_START_MESSAGE = false
+   PERSONAL_MESSAGE = null" > config.env
+   ```
 
-4. Get [Render api key](https://dashboard.render.com/u/settings#api-keys)
+   - [Read More](https://github.com/lyfe00011/levanter/wiki/Environment_Variables)
 
-2. Now Deploy
-    <br>
-<a href='https://render.com/deploy?repo=https://github.com/Kgtech-cmr/KERM-LITE-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=render&logoColor=white'/>
-</a>
+7. **Edit `config.env` Using Nano (if needed):**
+   - To save, press `Ctrl + O`, then press `Enter`, and to exit, press `Ctrl + X`.
 
-#### DEPLOY TO KOYEB 
+8. **Start and Stop the Bot:**
+   - To start the bot:
+     ```sh
+     pm2 start . --name botName --attach --time
+     ```
+   - To stop the bot:
+     ```sh
+     pm2 stop botName
+     ```
 
-1. If You don't have a account in koyeb. Create a account.
-    <br>
-<a href='https://app.koyeb.com/auth/signup' target="_blank"><img alt='koyeb' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
+### 4. Deploy on Replit
 
-3. Get [DATABASE_URL](https://github.com/A-d-i-t-h-y-a-n/hermit-md/wiki/DATABASE_URL) and copy it
+[![Run on Replit](https://replit.com/badge/github/your-repo-owner/your-repo-name)](https://replit.com/@Nightbot2O/whatsapp-bot-md)
 
-4. Get [Koyeb api key](https://app.koyeb.com/account/api)
+1. Fork the repository.
+2. Edit `config.env`.
+3. Click run.
 
-2. Now Deploy
-    <br>
-<a href='https://kerm.koyeb.app/deploy-koyeb' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb&logoColor=white'/>
+### 5. Deploy on Render
+1. **Create an Account:**
+   - Create an account on [render](https://dashboard.render.com/register). [Sign up now](https://dashboard.render.com/register).
 
-</a>
+2. **Get Required Information:**
+   - Get the [DATABASE_URL](https://github.com/lyfe00011/levanter/wiki/DATABASE_URL). You'll need this while deploying.
+   - Get the [SESSION_ID](https://qr-hazel-alpha.vercel.app/md). Open Linked Devices in WhatsApp and [SCAN](https://qr-hazel-alpha.vercel.app/md) now.
+   - Get the render API key. [Let's Go](https://dashboard.render.com/u/settings#api-keys).
 
+3. **Deploy:**
+   - [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://qr-hazel-alpha.vercel.app/render)
+### Thanks To
 
-### ✧✧ Follow this Tutorial for Maria's  error free and safe Deployment 
-<p align="left" >
-  <a href="https://youtu.be/KNu-gr2h7bo"><img src="https://img.shields.io/badge/Tutorial-Video-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://youtu.be/ww4z2m3uORU" /><br>
-     
-</p>   
-    
-
-
-# ✧✧Install Manually 👇
-
-<details>
-<summary>Read more</summary>
-
-## FOR Replit ☁️
-
-1. fork this repo
-2. create account on replit.com
-3. copy this link
-   ._ ```https://github.com/Kgtech-cmr/KERM-LITE-MD```
-4. Create a New Repl
-5. use import the Kerm-Lite-Md from the link
-6. press the run button and link your bot now
-
-
-## FOR GOOGLE CLOUD ☁️
-
-1.- Cloud
-```js
-sudo apt-get install libwebp-dev -y
-sudo apt-get install git -y
-sudo apt-get install nodejs -y
-sudo apt-get install ffmpeg -y
-sudo apt-get install yarn -y
-sudo apt-get install imagemagick -y
-```
-
-2.-
-```js
-git clone https://github.com/Kgtech-cmr/KERM-LITE-MD && cd KERM-LITE-MD 
-```
-
-3.- 
-```js
-yarn install
-```
-4.- 
-```js
-yarn install pm2
-```
-5.- Termux
-```js
-yarn start pm2
-```
-
-
-
-  
-## Requirements
-
-* [Node.js](https://nodejs.org/en/)
-* [Git](https://git-scm.com/downloads)
-* [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip)
-* [Libwebp](https://developers.google.com/speed/webp/download)
-* Any text editor
-
-<br>
-
-- Termux
-```js
-apt update -y && apt upgrade -y && pkg update -y && pkg upgrade -y && pkg install libwebp -y && pkg install git -y && pkg install nodejs -y && pkg install ffmpeg -y && pkg install yarn && pkg install imagemagick -y && git clone https://github.com/Kgtech-cmr/KERM-LITE-MD && cd KERM-LITE-MD && npm install && npm start
-
-```
-
-- Update
-```js
-rm -rf Maria-MD &&
-git clone https://github.com/Kgtech-cmr/KERM-LITE-MD && cd KERM-LITE-MD && npm install && npm start
-
-```
-
-- Command For 24/7
-```js
-npm i -g forever && forever index.js && forever save && forever logs
-```
-<br>
+- [Yusuf Usta](https://github.com/Quiec) for [WhatsAsena](https://github.com/yusufusta/WhatsAsena)
+- [@adiwajshing](https://github.com/adiwajshing) for [Baileys](https://github.com/adiwajshing/Baileys)
