@@ -12,10 +12,10 @@ bot(
     type: 'download',
   },
   async (message, match) => {
-    if (!match) return await message.send('*Example : apk Mixplorer*')
+    if (!match) return await message.send('*Example : apk Termux*')
     const { result, status } = await apkMirror(match)
     if (status > 400) {
-      if (!result.length) return await message.send('_No results found matching your query_')
+      if (!result.length) return await message.send('_No results found matching your query man😑_')
       const list = []
       for (const { title, url } of result) list.push({ id: `apk ${status};;${url}`, text: title })
       const lists = generateList(
