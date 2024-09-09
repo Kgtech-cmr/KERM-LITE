@@ -1,6 +1,6 @@
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 ## 𝐊𝐄𝐑𝐌-LITE-MD
-| [![Kgtech-cmr](https://files.fm/u/hy8mq3rnjf)](https://github.com/Kgtech-cmr)|
+| [![Kgtech-cmr](https://telegra.ph/file/3ac47cbad32a86aa12251.jpg)](https://github.com/Kgtech-cmr)|
 |----|
    ✦𝗠𝗔𝗗𝗘 𝗕𝗬 𝐊𝐆 𝐓𝐄𝐂𝐇✦
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
