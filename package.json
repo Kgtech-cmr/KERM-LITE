@@ -11,7 +11,7 @@
     "whiskeysockets",
     "multi-device"
   ],
-  "author": "DavidCyril",
+  "author": "Rayan Kerm",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "npm:@whiskeysockets/baileys@^6.7.7",
