@@ -11,8 +11,8 @@ Module(
    {
       pattern: "runtime",
       fromMe: mode,
-      react: "📉",
       desc: "Check uptime of bot",
+      react: "📉",
       type: "system",
    },
    async (message, match) => {
@@ -235,7 +235,7 @@ Module(
       }
 
       const { prefix } = message;
-      const [date, time] = new Date().toLocaleString("en-IN", { timeZone: TIME_ZONE }).split(",");
+      const [date, time] = new Date().toLocaleString("en-CMR", { timeZone: TIME_ZONE }).split(",");
       let menu = `\`\`\`╭─ ${BOT_INFO.split(";")[1]} ───⊷
 │ 𝕌𝕤𝕖𝕣:  ${message.pushName}
 │ ℙ𝕣𝕖𝕗𝕚𝕩: ${prefix}
