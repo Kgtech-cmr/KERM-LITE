@@ -47,6 +47,7 @@ Module(
    {
       pattern: "update",
       fromMe: mode,
+      react: "🆕",
       info: "Check for updates",
       type: "misc",
    },
@@ -99,24 +100,26 @@ Module(
 Module(
    {
       pattern: "repo",
+      alias: ["lite","kerm"]
       fromMe: mode,
+      react: "⚡️",
       desc: "Repo",
       type: "misc",
    },
    async (message, match, client) => {
-      let { data } = await axios.get("https://api.github.com/repos/FXastro/fxop-md");
+      let { data } = await axios.get("https://api.github.com/repos/Kgtech-cmr/KERM-LITE");
       let mssg = `
 \t\`\`\`SCRIPT\`\`\`\n
 ╭──────────────
-│ *Owner:* _*FXastro*_
-│ *Repo:* _https://github.com/FXastro/fxop-md_
-│ *Stars:* _${data.stargazers_count}_
-│ *Forks:* _${data.forks}_
-│ *Code:* _${data.language}_
-│ *Stars:* ${data.stargazers_count}
+│ *𝕆𝕨𝕟𝕖𝕣:* _*KɢTᴇᴄʜ-ᴄᴍʀ*_
+│ *ℝ𝕖𝕡𝕠:* _https://github.com/Kgtech-cmr/KERM-LITE_
+│ *𝕊𝕥𝕒𝕣𝕤:* _${data.stargazers_count}_
+│ *𝔽𝕠𝕣𝕜𝕤:* _${data.forks}_
+│ *ℂ𝕠𝕕𝕖:* _${data.language}_
+│ *𝕊𝕥𝕒𝕣𝕤:* ${data.stargazers_count}
 ╰──────────────
    `;
-      const thumbnailPath = "../media/images/thumb.jpg";
+      const thumbnailPath = "../media/images/thumb.JPG";
       const thumbnail = await buffpath(thumbnailPath);
       return await message.send(thumbnail, {
          caption: mssg,
@@ -125,7 +128,7 @@ Module(
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                newsletterJid: "120363327841612745@newsletter",
-               newsletterName: "ғx-ʀᴇᴘᴏɪsᴛᴏʀʏ",
+               newsletterName: "ᴋɢ-ʀᴇᴘᴏɪsᴛᴏʀʏ",
             },
          },
       });
