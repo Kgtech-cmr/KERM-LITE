@@ -30,11 +30,12 @@ Module(
    {
       pattern: "gpt",
       fromMe: mode,
+      react: "🧠",
       desc: "Chat With Gpt4 AI Model",
       type: "ai",
    },
    async (message, match) => {
-      if (!match) return await message.sendReply("_Hello How Can I Assist You Today?_");
+      if (!match) return await message.sendReply("_Hello @user How Can I Assist You Today?_");
       await message.reply("_Thinking_");
       const processedMsg = await new AIService();
       const response = await processedMsg.gpt4(match);
@@ -80,6 +81,7 @@ Module(
    {
       pattern: "sdimg",
       fromMe: mode,
+      react: "🪄",
       desc: "Stable Diffusion Image",
       type: "ai",
    },
