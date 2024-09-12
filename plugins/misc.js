@@ -100,7 +100,7 @@ Module(
 Module(
    {
       pattern: "repo",
-      alias: ["lite","kerm"]
+      alias: ["lite","kerm"],
       fromMe: mode,
       react: "⚡️",
       desc: "Repo",
