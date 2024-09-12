@@ -333,21 +333,21 @@ Module(
    {
       pattern: "ep9",
       fromMe: mode,
-      desc: "Cameroon Flag",
+      desc: "Cameroonian Flag",
       type: "eps",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
-      const img = await logo.cameroonflag(match);
+      const img = await logo.cameroonianflag(match);
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                newsletterJid: "120363327841612745@newsletter",
-               newsletterName: "Cameroon ꜰʟᴀɢ",
+               newsletterName: "Cameroonian ꜰʟᴀɢ",
             },
          },
       });
