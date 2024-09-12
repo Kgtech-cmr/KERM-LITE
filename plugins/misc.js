@@ -47,7 +47,6 @@ Module(
    {
       pattern: "update",
       fromMe: mode,
-      react: "🆕",
       info: "Check for updates",
       type: "misc",
    },
@@ -100,9 +99,7 @@ Module(
 Module(
    {
       pattern: "repo",
-      alias: ["lite","kerm"],
       fromMe: mode,
-      react: "⚡️",
       desc: "Repo",
       type: "misc",
    },
