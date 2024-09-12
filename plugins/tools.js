@@ -195,6 +195,7 @@ Module(
    {
       pattern: "url",
       fromMe: mode,
+      react: "🔗",
       desc: "Shortens Url",
       type: "tools",
    },
@@ -202,7 +203,7 @@ Module(
       if (!match) return await message.sendReply("_Provide me A URL_");
       await message.sendReply("_Shorting link_");
       const url = await shortenUrl(match);
-      const msg = `_Here's your link *${url}*_`;
+      const msg = `_Here's your link bro😎 *${url}*_`;
       return await message.send(msg);
    }
 );
