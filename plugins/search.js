@@ -11,8 +11,8 @@ Module(
       type: "search",
    },
    async (m, match) => {
-      if (!match) return await m.sendReply("_Hmm Provide Me A Song Name_");
-      await m.reply("_Searching Lyrics!_");
+      if (!match) return await m.sendReply("_Hmm Provide Me A Song Name Man_");
+      await m.reply("_Searching Lyrics, wait.._");
       const lyricsMsg = await search.lyrics(match);
       return await m.send(lyricsMsg, {
          contextInfo: {
@@ -52,8 +52,8 @@ Module(
       type: "search",
    },
    async (message, match) => {
-      if (!match) return await message.send("_need query!_");
-      await message.send("_Searching google_");
+      if (!match) return await message.send("_need query man!_");
+      await message.send("_Searching google, wait..._");
       const results = await search.google(match);
       return message.send(results, {
          contextInfo: {
