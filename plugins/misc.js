@@ -107,7 +107,7 @@ Module(
       type: "misc",
    },
    async (message, match, client) => {
-      let { data } = await axios.get("https://api.github.com/repos/Kgtech-cmr/KERM-LITE");
+      let { data } = await axios.get("https://api.github.com/repos/FXastro/fxop-md");
       let mssg = `
 \t\`\`\`SCRIPT\`\`\`\n
 ╭──────────────
