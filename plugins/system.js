@@ -11,6 +11,7 @@ Module(
    {
       pattern: "runtime",
       fromMe: mode,
+      react: "📉",
       desc: "Check uptime of bot",
       type: "system",
    },
@@ -23,11 +24,12 @@ Module(
    {
       pattern: "restart",
       fromeMe: true,
+      react: "🔄",
       desc: "Restart's the bot",
       type: "system",
    },
    async message => {
-      await message.sendReply("*_Restarting, hold on_*");
+      await message.sendReply("*_Rᴇsᴛᴀʀᴛɪɴɢ, ʜᴏʟᴅ ᴏɴ_*");
       exec("npm restart all", (error, stdout, stderr) => {
          if (error) {
             console.error(`Error restarting process: ${error.message}`);
@@ -46,11 +48,12 @@ Module(
    {
       pattern: "shutdown",
       fromeMe: true,
+      react: "⏹️",
       desc: "Shutdown the bot",
       type: "system",
    },
    async message => {
-      await message.sendReply("_Shutting Down_");
+      await message.sendReply("_Sʜᴜᴛᴛɪɴɢ ᴅᴏᴡɴ_");
       exec("npm stop all", (error, stdout, stderr) => {
          if (error) {
             console.error(`Error restarting process: ${error.message}`);
@@ -69,6 +72,7 @@ Module(
    {
       pattern: "ping ?(.*)",
       fromMe: mode,
+      react: "📊",
       desc: "Bot response in milliseconds.",
       type: "system",
    },
@@ -85,15 +89,16 @@ Module(
    {
       pattern: "alive",
       fromMe: mode,
+      react: "🙋🏽‍♂️",
       desc: "Shows system status with different designs.",
       type: "system",
    },
    async message => {
       const aliveMessage = `
       ${message.pushName}
-    ғxᴏᴘ ʙᴏᴛ ɪs ᴏɴʟɪɴᴇ ᴀɴᴅ ᴀᴄᴛɪᴠᴇ
+    𝙺𝙴𝚁𝙼 𝙻𝙸𝚃𝙴 𝙸𝚂 𝙾𝙽𝙻𝙸𝙽𝙴 𝙰𝙽𝙳 𝙰𝙲𝚃𝙸𝚅𝙴
     `;
-      const thumbnailPath = "../media/images/thumb.jpg";
+      const thumbnailPath = "../media/images/thumb.JPG";
       const thumbnail = await buffpath(thumbnailPath);
       try {
          await message.send(thumbnail, {
@@ -118,6 +123,7 @@ Module(
    {
       pattern: "install",
       fromMe: mode,
+      react: "⬇️",
       desc: "Installs External plugins",
       type: "system",
    },
@@ -214,6 +220,7 @@ Module(
    {
       pattern: "menu",
       fromMe: mode,
+      react: "⚡️",
       desc: "Show All Commands",
       dontAddCommandList: true,
    },
@@ -230,14 +237,14 @@ Module(
       const { prefix } = message;
       const [date, time] = new Date().toLocaleString("en-IN", { timeZone: TIME_ZONE }).split(",");
       let menu = `\`\`\`╭─ ${BOT_INFO.split(";")[1]} ───⊷
-│ User:  ${message.pushName}
-│ Prefix: ${prefix}
-│ Date: ${date}
-│ Time: ${time}
-│ Plugins: ${plugins.commands.length} 
-│ Uptime: ${runtime(process.uptime())} 
-│ Ram: ${formatBytes(os.totalmem() - os.freemem())} / ${formatBytes(os.totalmem())}
-│ Version: ${require("../package.json").version}
+│ 𝕌𝕤𝕖𝕣:  ${message.pushName}
+│ ℙ𝕣𝕖𝕗𝕚𝕩: ${prefix}
+│ 𝔻𝕒𝕥𝕖: ${date}
+│ 𝕋𝕚𝕞𝕖: ${time}
+│ ℙ𝕝𝕦𝕘𝕚𝕟𝕤: ${plugins.commands.length} 
+│ 𝕌𝕡𝕥𝕚𝕞𝕖: ${runtime(process.uptime())} 
+│ ℝ𝕒𝕞: ${formatBytes(os.totalmem() - os.freemem())} / ${formatBytes(os.totalmem())}
+│ 𝕍𝕖𝕣𝕤𝕚𝕠𝕟: ${require("../package.json").version}
 ╰────────────────⊷\`\`\`\n`;
 
       const categorizedCommands = plugins.commands.reduce((acc, command) => {
@@ -255,7 +262,7 @@ Module(
          .forEach(category => {
             menu += `\n╭── *${tiny(category)}* ──────⊷\n`;
             categorizedCommands[category].forEach(cmd => {
-               menu += `│◌ ${cmd}\n`;
+               menu += `│☻︎ ${cmd}\n`;
             });
             menu += `╰──────────────⊷\n`;
          });
