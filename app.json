@@ -1,33 +1,33 @@
 {
- "name": "fxop",
- "logo": "https://avatars.githubusercontent.com/u/176591771?v=4",
+ "name": "Lite",
+ "logo": "https://telegra.ph/file/3ac47cbad32a86aa12251.jpg",
  "success_url": "/",
  "stack": "container",
  "env": {
   "SESSION_ID": {
    "description": "SESSION ID FOR BOT",
    "required": true,
-   "value": "Session~"
+   "value": ""
   },
   "BOT_INFO": {
    "description": "BOT INFO",
    "required": true,
-   "value": "ᴀsᴛʀᴏ;ғxᴏᴘ-ᴍᴅ;https://raw.githubusercontent.com/FXastro/fxop-md/master/media/images/thumb.jpg"
+   "value": "Kɢᴛᴇᴄʜ;༺𝐊𝐄𝐑𝐌-𝐋𝐈𝐓𝐄༻;https://telegra.ph/file/3ac47cbad32a86aa12251.jpg"
   },
   "SUDO": {
    "description": "SUDO NUMBERS",
    "required": true,
-   "value": "2348039607375,2349027862116"
+   "value": "237656520674,237650564445"
   },
   "AUTHOR": {
    "description": "STICKER AUTHOR",
    "required": false,
-   "value": "ASTRO"
+   "value": "𝐊𝐆𝐓𝐄𝐂𝐇"
   },
   "PACKNAME": {
    "description": "STICKER PACKNAME",
    "required": false,
-   "value": "FXOP_BOT"
+   "value": "߷𝓚𝓮𝓻𝓶-𝓛𝓲𝓽𝓮߷"
   },
   "AUTO_READ": {
    "description": "AUTO READ MSGS",
