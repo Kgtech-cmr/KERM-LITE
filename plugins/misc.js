@@ -109,14 +109,14 @@ Module(
 \t\`\`\`SCRIPT\`\`\`\n
 ╭──────────────
 │ *Owner:* _*FXastro*_
-│ *Repo:* _https://github.com/FXastro/fxop-md_
+│ *Repo:* _https://github.com/Kgtech-cmr/KERM-LITE_
 │ *Stars:* _${data.stargazers_count}_
 │ *Forks:* _${data.forks}_
 │ *Code:* _${data.language}_
 │ *Stars:* ${data.stargazers_count}
 ╰──────────────
    `;
-      const thumbnailPath = "../media/images/thumb.jpg";
+      const thumbnailPath = "../media/images/thumb.JPG";
       const thumbnail = await buffpath(thumbnailPath);
       return await message.send(thumbnail, {
          caption: mssg,
