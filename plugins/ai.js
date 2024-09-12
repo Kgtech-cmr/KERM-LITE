@@ -9,7 +9,7 @@ Module(
       type: "ai",
    },
    async (message, match) => {
-      if (!match) return await message.sendReply("_Hello What Code Do You Help For?_");
+      if (!match) return await message.sendReply("_Hello What Code Do You Help For ?_");
       await message.reply("_Analyzing Request_");
       const processedMsg = await new AIService();
       const response = await processedMsg.coderAi(match);
@@ -34,7 +34,7 @@ Module(
       type: "ai",
    },
    async (message, match) => {
-      if (!match) return await message.sendReply("_Hello How Can I Assist You Today?_");
+      if (!match) return await message.sendReply("_Hello How Can I Assist You Today ?_");
       await message.reply("_Thinking_");
       const processedMsg = await new AIService();
       const response = await processedMsg.gpt4(match);
