@@ -1,0 +1,15 @@
+services:
+ - type: worker
+   name: fxop-md-demo
+   env: docker
+   plan: free
+   dockerfilePath: ./Dockerfile
+   envVars:
+    - key: SESSION_ID
+      value: Session~
+    - key: BOT_INFO
+      value: ᴀsᴛʀᴏ;ғxᴏᴘ-ᴍᴅ
+    - key: SUDO
+      value: 2348039607375
+    - key: ANTILINK
+      value: "true"
