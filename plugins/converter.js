@@ -3,6 +3,7 @@ const { Module, mode, toAudio, webp2mp4, textToImg, listall, getUrl } = require(
 Module(
    {
       pattern: "sticker",
+      alias: ["s"],
       fromMe: mode,
       desc: "Converts Photo/video/text to sticker",
       type: "converter",
