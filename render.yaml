@@ -1,15 +1,15 @@
 services:
  - type: worker
-   name: fxop-md-demo
+   name: kerm-md-demo
    env: docker
    plan: free
    dockerfilePath: ./Dockerfile
    envVars:
     - key: SESSION_ID
-      value: Session~SujtqYPp
+      value: 
     - key: BOT_INFO
-      value: ᴀsᴛʀᴏ;ғxᴏᴘ-ᴍᴅ
+      value: Kɢᴛᴇᴄʜ;༺𝐊𝐄𝐑𝐌-𝐋𝐈𝐓𝐄༻
     - key: SUDO
-      value: 22896573070
+      value: 237656520674
     - key: ANTILINK
       value: "true"
