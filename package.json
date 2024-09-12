@@ -8,8 +8,8 @@
    },
    "author": "Kgtech",
    "scripts": {
-      "start": "pm2 start index.js --deep-monitoring --attach --name kermlite",
-      "stop": "pm2 stop kermlite"
+      "start": "pm2 start index.js --deep-monitoring --attach --name fx-md",
+      "stop": "pm2 stop fx-md"
    },
    "devDependencies": {
       "@eslint/js": "^9.4.0",
