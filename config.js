@@ -22,7 +22,7 @@ module.exports = {
    SUDO: process.env.SUDO || "237656520674",
    PRESENCE: process.env.PRESENCE || "available", // "unavailable", "available", "composing", "recording", "paused"
    CAPTION: process.env.CAPTION || "© Kɢᴛᴇᴄʜ-ᴄᴍʀ",
-   TIME_ZONE: process.env.TIME_ZONE || "Africa/Cameroun",
+   TIME_ZONE: process.env.TIME_ZONE || "Africa/Lagos",
    ANTILINK_ACTION: process.env.ANTI_LINK || "kick",
    BRANCH: "master",
    AUTHOR: process.env.AUTHOR || "Kɢᴛᴇᴄʜ-ᴄᴍʀ",
