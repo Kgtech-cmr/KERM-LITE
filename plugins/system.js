@@ -12,7 +12,6 @@ Module(
       pattern: "runtime",
       fromMe: mode,
       desc: "Check uptime of bot",
-      react: "📉",
       type: "system",
    },
    async (message, match) => {
@@ -24,7 +23,6 @@ Module(
    {
       pattern: "restart",
       fromeMe: true,
-      react: "🔄",
       desc: "Restart's the bot",
       type: "system",
    },
@@ -48,7 +46,6 @@ Module(
    {
       pattern: "shutdown",
       fromeMe: true,
-      react: "⏹️",
       desc: "Shutdown the bot",
       type: "system",
    },
@@ -72,7 +69,6 @@ Module(
    {
       pattern: "ping ?(.*)",
       fromMe: mode,
-      react: "📊",
       desc: "Bot response in milliseconds.",
       type: "system",
    },
@@ -89,7 +85,6 @@ Module(
    {
       pattern: "alive",
       fromMe: mode,
-      react: "🙋🏽‍♂️",
       desc: "Shows system status with different designs.",
       type: "system",
    },
@@ -123,7 +118,6 @@ Module(
    {
       pattern: "install",
       fromMe: mode,
-      react: "⬇️",
       desc: "Installs External plugins",
       type: "system",
    },
@@ -221,7 +215,6 @@ Module(
       pattern: "menu",
       fromMe: mode,
       desc: "Show All Commands",
-      react: "⚡️",
       dontAddCommandList: true,
    },
    async (message, match) => {
