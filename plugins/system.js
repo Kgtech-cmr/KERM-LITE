@@ -61,7 +61,7 @@ Module(
       type: "system",
    },
    async message => {
-      await message.sendReply("*_Restarting, hold on_*");
+      await message.sendReply("*_Rᴇsᴛᴀʀᴛɪɴɢ, ʜᴏʟᴅ ᴏɴ_*");
       exec("pm2 restart", (error, stdout, stderr) => {
          if (error) {
             console.error(`Error restarting process: ${error.message}`);
@@ -84,7 +84,7 @@ Module(
       type: "system",
    },
    async message => {
-      await message.sendReply("_Shutting Down_");
+      await message.sendReply("_Sʜᴜᴛᴛɪɴɢ Dᴏᴡɴ_");
       exec("npm stop all", (error, stdout, stderr) => {
          if (error) {
             console.error(`Error restarting process: ${error.message}`);
@@ -125,9 +125,9 @@ Module(
    async message => {
       const aliveMessage = `
       ${message.pushName}
-    ғxᴏᴘ ʙᴏᴛ ɪs ᴏɴʟɪɴᴇ ᴀɴᴅ ᴀᴄᴛɪᴠᴇ
+    Kᴇʀᴍ ʟɪᴛᴇ⚡️ ɪs ᴏɴʟɪɴᴇ ᴀɴᴅ ᴀᴄᴛɪᴠᴇ ʙʀᴏ😎
     `;
-      const thumbnailPath = "../media/images/thumb.jpg";
+      const thumbnailPath = "../media/images/thumb.JPG";
       const thumbnail = await buffpath(thumbnailPath);
       try {
          await message.send(thumbnail, {
@@ -156,7 +156,7 @@ Module(
       type: "system",
    },
    async (message, match) => {
-      if (!match) return await message.sendMessage(message.jid, "_Send a plugin url_");
+      if (!match) return await message.sendMessage(message.jid, "_Send a plugin url bro_");
 
       try {
          var url = new URL(match);
@@ -211,7 +211,7 @@ Module(
       var mesaj = "";
       var plugins = await PluginDB.findAll();
       if (plugins.length < 1) {
-         return await message.sendMessage(message.jid, "_No external plugins installed_");
+         return await message.sendMessage(message.jid, "_No external plugins installed bro_");
       } else {
          plugins.map(plugin => {
             mesaj += "```" + plugin.dataValues.name + "```: " + plugin.dataValues.url + "\n";
@@ -229,7 +229,7 @@ Module(
       type: "system",
    },
    async (message, match) => {
-      if (!match) return await message.sendMessage(message.jid, "_Need a plugin name_");
+      if (!match) return await message.sendMessage(message.jid, "_Need a plugin name bro_");
 
       var plugin = await PluginDB.findAll({ where: { name: match } });
 
@@ -264,14 +264,14 @@ Module(
       const { prefix } = message;
       const [date, time] = new Date().toLocaleString("en-IN", { timeZone: TIME_ZONE }).split(",");
       let menu = `\`\`\`╭─ ${BOT_INFO.split(";")[1]} ───
-│ User:  ${message.pushName}
-│ Prefix: ${prefix}
-│ Date: ${date}
-│ Time: ${time}
-│ Plugins: ${plugins.commands.length} 
-│ Uptime: ${runtime(process.uptime())} 
-│ Ram: ${formatBytes(os.totalmem() - os.freemem())} / ${formatBytes(os.totalmem())}
-│ Version: ${require("../package.json").version}
+│ 𝕌𝕤𝕖𝕣:  ${message.pushName}
+│ ℙ𝕣𝕖𝕗𝕚𝕩: ${prefix}
+│ 𝔻𝕒𝕥𝕖: ${date}
+│ 𝕋𝕚𝕞𝕖: ${time}
+│ ℙ𝕝𝕦𝕘𝕚𝕟𝕤: ${plugins.commands.length} 
+│ 𝕌𝕡𝕥𝕚𝕞𝕖: ${runtime(process.uptime())} 
+│ ℝ𝕒𝕞: ${formatBytes(os.totalmem() - os.freemem())} / ${formatBytes(os.totalmem())}
+│ 𝕍𝕖𝕣𝕤𝕚𝕠𝕟: ${require("../package.json").version}
 ╰────────────────\`\`\`\n`;
 
       const categorizedCommands = plugins.commands.reduce((acc, command) => {
