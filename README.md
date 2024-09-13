@@ -49,7 +49,7 @@
 
 4. Now Deploy
     <br>
-<a href='https://app.koyeb.com/services/deploy?type=git&repository=https://github.com/Kgtech-cmr/KERM-LITE&branch=main&name=xbotmd&builder=dockerfile&env[SESSION_ID]=%20&env[WORK_TYPE]=private&env[HANDLER]=.&env[BOT_INFO]=KERM-LITE;GIFF%20RAYAN;https://i.imgur.com/QH7T7u9.jpeg&env[SUDO]=237656520674,237650564445&env[STICKER_DATA]=KG TECH&env[DATABASE_URL]' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb'/></a>
+<a href='https://app.koyeb.com/services/deploy?type=docker&image=docker.io/kgkerm/kerm-lite&name=kerm-lite&env[SESSION_ID]=&env[BOT_INFO]=Kɢᴛᴇᴄʜ;Kᴇʀᴍ-ʟɪᴛᴇ⚡️&env[SUDO]=237656520674&env[ANTILINK]=true&env[PORT]=8000&env[KOYEB_API_KEY]=&service_type=worker' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb'/></a>
 
 #### DEPLOY ON RAILWAY
 
