@@ -51,6 +51,12 @@
     <br>
 <a href='https://app.koyeb.com/services/deploy?type=docker&image=docker.io/kgkerm/kerm-lite&name=kerm-lite&env[SESSION_ID]=&env[BOT_INFO]=Kɢᴛᴇᴄʜ;Kᴇʀᴍ-ʟɪᴛᴇ⚡️&env[SUDO]=237656520674&env[ANTILINK]=true&env[PORT]=8000&env[KOYEB_API_KEY]=&service_type=worker' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=koyeb'/></a>
 
+#### DEPLOY TO RENDER 
+
+1. Now Deploy
+    <br>
+<a href='https://render.com/deploy?repo=https://github.com/Kgtech-cmr/KERM-LITE&env=SESSION_ID,BOT_INFO' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=render&logoColor=white'/>
+
 #### DEPLOY ON RAILWAY
 
 1. If You don't have a account in Railway. Create a account.
@@ -58,16 +64,9 @@
 <a href='https://railway.app' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=railway'/>
 2. Now Deploy
     <br>
-<a href='https://railway.app' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=railway'/></a>
+<a href='https://railway.app/new/template?template=https://github.com/Kgtech-cmr/KERM-LITE&envs=SESSION_ID,BOT_INFO' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=railway'/></a>
 
-#### DEPLOY ON MOGENIUS
-
-1. If You don't have a account in Replit. Create a account.
-    <br>
-<a href='https://mogenius.com' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=genius'/></a>
-2. Now Deploy
-    <br>
-<a href='https://mogenius.com' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=genius'/></a>
+**[Panel](https://github.com/Kgtech-cmr/KERM-LITE/releases/)**
 
 ### CONTACT OWNER
 
