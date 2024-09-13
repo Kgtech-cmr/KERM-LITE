@@ -49,7 +49,7 @@ Module(
       type: "system",
    },
    async (message, match) => {
-      message.reply(`*Uptime: ${runtime(process.uptime())}*`);
+      message.reply(`*Kᴇʀᴍ Lɪᴛᴇ⚡️Uᴘᴛɪᴍᴇ: ${runtime(process.uptime())}*`);
    }
 );
 
@@ -136,7 +136,7 @@ Module(
                forwardingScore: 999,
                isForwarded: true,
                forwardedNewsletterMessageInfo: {
-                  newsletterJid: "120363327841612745@newsletter",
+                  newsletterJid: "120363295657486372@newsletter",
                   newsletterName: "ᴀʟɪᴠᴇ ᴍsɢ",
                },
             },
@@ -289,7 +289,7 @@ Module(
          .forEach(category => {
             menu += `\n╭── *${tiny(category)}* ──────\n`;
             categorizedCommands[category].forEach(cmd => {
-               menu += `│ ${cmd}\n`;
+               menu += `│✥ ${cmd}\n`;
             });
             menu += `╰──────────────\n`;
          });
@@ -306,7 +306,7 @@ Module(
                   forwardingScore: 999,
                   isForwarded: true,
                   forwardedNewsletterMessageInfo: {
-                     newsletterJid: "120363327841612745@newsletter",
+                     newsletterJid: "120363295657486372@newsletter",
                      newsletterName: `Version ${require("../package.json").version}`,
                   },
                },
