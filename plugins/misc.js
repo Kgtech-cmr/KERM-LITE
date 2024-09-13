@@ -124,8 +124,8 @@ Module(
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-               newsletterJid: "120363327841612745@newsletter",
-               newsletterName: "ғx-ʀᴇᴘᴏɪsᴛᴏʀʏ",
+               newsletterJid: "120363295657486372@newsletter",
+               newsletterName: "ᴋᴇʀᴍ-ʀᴇᴘᴏɪsᴛᴏʀʏ",
             },
          },
       });
