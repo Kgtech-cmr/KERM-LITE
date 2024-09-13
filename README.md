@@ -27,7 +27,7 @@
 <a href="https://lite-session.onrender.com/code"><img src="https://img.shields.io/badge/PAIR_CODE-yellow" alt="Click Here to Get Pair-Code" width="110"></a>   
 <a href="https://lite-session.onrender.com/qr"><img src="https://img.shields.io/badge/QR CODE-yellow" alt="Click Here to Get QR-Code" width="90"></a>
 ## How To Deploy On Panel.
- [![YOUTUBE](https://img.shields.io/badge/HOW_TO_DEPLOY-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/T77rQM7Nk5k?si=gg-LJxS6vC6kBEpJ)
+ [![YOUTUBE](https://img.shields.io/badge/HOW_TO_DEPLOY-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/T77rQM7Nk5k?si=gg-LJxS6v)
 
 #### DEPLOY TO HEROKU 
 
