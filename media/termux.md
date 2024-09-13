@@ -11,8 +11,8 @@ pkg install openssh -y
 pkg install nano -y
 pkg install wget -y
 pkg clean
-git clone https://github.com/FXastro/fxop-md
-cd fxop-md
+git clone https://github.com/Kgtech-cmr/KERM-LITE
+cd kerm-lite
 npm install
 npm start
 ```
@@ -20,8 +20,8 @@ npm start
 ### What you need to do!
 
 1. **Cloning the Repository**:
-   - `git clone https://github.com/FXastro/fxop-md`: Clones the repository into the current directory.
-   - `cd fxop-md`: Changes the directory to the cloned repository folder.
+   - `git clone https://github.com/Kgtech-cmr/KERM-LITE`: Clones the repository into the current directory.
+   - `cd kerm-lite`: Changes the directory to the cloned repository folder.
 
 2. **Create an `.env` File**:
    - `echo 'SESSION_ID="your_session_id_here"' > .env`: Creates a `.env` file with the `SESSION_ID` environment variable.
