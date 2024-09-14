@@ -30,6 +30,8 @@
  [![YOUTUBE](https://img.shields.io/badge/HOW_TO_DEPLOY-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be)
 
 #### DEPLOY ON PANEL 
+1. Now Deploy
+    <br>
 <a href='https://optiklink.com' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/-PANEL-black?style=for-the-badge&logo=optilink'/></a>
    <br>
 
