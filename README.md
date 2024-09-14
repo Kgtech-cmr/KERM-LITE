@@ -30,9 +30,8 @@
  [![YOUTUBE](https://img.shields.io/badge/HOW_TO_DEPLOY-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be)
 
 #### DEPLOY ON PANEL 
-
   <br>
-<a href='https://heroku.com' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=heroku'/></a>
+<a href='https://heroku.com' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/-PANEL-black?style=for-the-badge&logo=optilink'/></a>
    <br>
 
 #### DEPLOY TO HEROKU 
