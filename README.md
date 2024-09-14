@@ -31,6 +31,10 @@
 
 #### DEPLOY ON PANEL 
 
+  <br>
+<a href='https://heroku.com' target="_blank"><img alt='Replit' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=heroku'/></a>
+   <br>
+
 #### DEPLOY TO HEROKU 
 
 1. If You don't have a account in Heroku. Create a account.
