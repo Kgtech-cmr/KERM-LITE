@@ -29,6 +29,8 @@
 ## How To Deploy On Panel.
  [![YOUTUBE](https://img.shields.io/badge/HOW_TO_DEPLOY-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be)
 
+#### DEPLOY ON PANEL 
+
 #### DEPLOY TO HEROKU 
 
 1. If You don't have a account in Heroku. Create a account.
@@ -65,8 +67,6 @@
 2. Now Deploy
     <br>
 <a href='https://railway.app/new/template?template=https://github.com/Kgtech-cmr/KERM-LITE&envs=SESSION_ID,BOT_INFO' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=railway'/></a>
-
-**[Panel](https://github.com/Kgtech-cmr/KERM-LITE/releases/)**
 
 ### CONTACT OWNER
 
