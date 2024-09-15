@@ -18,7 +18,7 @@ Module(
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-               newsletterJid: "120363295657486372@g.us",
+               newsletterJid: "120363321386877609@newsletter",
                newsletterName: "ᴄᴏᴅᴇᴀɪ",
             },
          },
@@ -43,7 +43,7 @@ Module(
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-               newsletterJid: "120363295657486372@g.us",
+               newsletterJid: "120363321386877609@newsletter",
                newsletterName: "ᴄʜᴀᴛ ɢᴘᴛ𝟺",
             },
          },
@@ -68,7 +68,7 @@ Module(
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-               newsletterJid: "120363295657486372@g.us",
+               newsletterJid: "120363321386877609@newsletter",
                newsletterName: "ʟᴀᴍᴅᴀ ᴀɪ",
             },
          },
@@ -95,7 +95,7 @@ Module(
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-               newsletterJid: "120363295657486372@g.us",
+               newsletterJid: "120363321386877609@newsletter",
                newsletterName: "sᴛᴀʙʟᴇ ᴅɪғғᴜsɪᴏɴ",
             },
          },
@@ -126,7 +126,7 @@ Module(
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-               newsletterJid: "120363295657486372@g.us",
+               newsletterJid: "120363321386877609@newsletter",
                newsletterName: "ɪᴍᴀɢᴇ ᴇɴʜᴀɴᴄᴇʀ",
             },
          },
@@ -153,7 +153,7 @@ Module(
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-               newsletterJid: "120363295657486372@g.us",
+               newsletterJid: "120363321386877609@newsletter",
                newsletterName: "ᴅᴀʟʟᴇ ɪᴍᴀɢᴇ",
             },
          },
@@ -178,7 +178,7 @@ Module(
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-               newsletterJid: "120363295657486372@g.us",
+               newsletterJid: "120363321386877609@newsletter",
                newsletterName: "ʙɪɴɢ ᴀɪ",
             },
          },
