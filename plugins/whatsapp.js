@@ -318,7 +318,7 @@ Module(
    },
    async (message, match) => {
       const { readreceipts, profile, status, online, last, groupadd, calladd } = await message.client.fetchPrivacySettings(true);
-      const msg = `*♺ my privacy*\n\n*ᝄ name :* ${message.client.user.name}\n*ᝄ online:* ${online}\n*ᝄ profile :* ${profile}\n*ᝄ last seen :* ${last}\n*ᝄ read receipt :* ${readreceipts}\n*ᝄ about seted time :*\n*ᝄ group add settings :* ${groupadd}\n*ᝄ call add settings :* ${calladd}`;
+      const msg = `*シ my privacy*\n\n*༒ name :* ${message.client.user.name}\n*༒ online:* ${online}\n*༒ profile :* ${profile}\n*༒ last seen :* ${last}\n*༒ read receipt :* ${readreceipts}\n*༒ about seted time :*\n*༒ group add settings :* ${groupadd}\n*༒ call add settings :* ${calladd}`;
       let img = await message.client.profilePictureUrl(message.user.jid, "image").catch(() => "https://i.ibb.co/sFjZh7S/6883ac4d6a92.jpg");
       await message.send(img, { caption: msg }, "image");
    }
