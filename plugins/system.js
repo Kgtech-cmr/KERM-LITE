@@ -108,7 +108,7 @@ Module(
    },
    async message => {
       const start = new Date().getTime();
-      const msg = await message.reply("Checking");
+      const msg = await message.reply("Checking lite");
       const end = new Date().getTime();
       const responseTime = (end - start) / 1000;
       await msg.edit(`*ʀᴇsᴘᴏɴsᴇ ʀᴀᴛᴇ ${responseTime} secs*`);
