@@ -11,7 +11,7 @@ Module(
       type: "search",
    },
    async (m, match) => {
-      if (!match) return await m.sendReply("_Hmm Provide Me A Song Name_");
+      if (!match) return await m.sendReply("_Hmm Provide Me A Song Name Man_");
       await m.reply("_Searching Lyrics!_");
       const lyricsMsg = await search.lyrics(match);
       return await m.send(lyricsMsg, {
@@ -19,7 +19,7 @@ Module(
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-               newsletterJid: "120363295657486372@newsletter",
+               newsletterJid: "120363321386877609@newsletter",
                newsletterName: "sᴏɴɢ ʟʏʀɪᴄs",
             },
          },
@@ -52,7 +52,7 @@ Module(
       type: "search",
    },
    async (message, match) => {
-      if (!match) return await message.send("_need query!_");
+      if (!match) return await message.send("_Need query!_");
       await message.send("_Searching google_");
       const results = await search.google(match);
       return message.send(results, {
@@ -60,7 +60,7 @@ Module(
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-               newsletterJid: "120363295657486372@newsletter",
+               newsletterJid: "120363321386877609@newsletter",
                newsletterName: "ɢᴏᴏɢʟᴇ sᴇᴀʀᴄʜ",
             },
          },
