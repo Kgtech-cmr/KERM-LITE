@@ -10,13 +10,13 @@ module.exports = {
    ANTILINK: toBool(process.env.ANTI_LINK) || false,
    HEROKU: toBool(process.env.HEROKU) || false,
    AUTO_READ: toBool(process.env.AUTO_READ) || false,
-   AUTO_STATUS_READ: toBool(process.env.AUTO_STATUS_READ) || true,
+   AUTO_STATUS_READ: toBool(process.env.AUTO_STATUS_READ) || false,
    DELETED_LOG: toBool(process.env.DELETED_LOG) || true,
    STATUS_SAVER: toBool(process.env.STATUS_SAVER) || false,
    AUTO_REACT: toBool(process.env.AUTO_REACT) || false,
 
    // String Values
-   SESSION_ID: process.env.SESSION_ID || "", // Put your session
+   SESSION_ID: process.env.SESSION_ID || "Session~hy11bqKD", // Put your session
    HANDLERS: process.env.HANDLER === "false" || process.env.HANDLER === "null" ? "^" : "[.]",
    BOT_INFO: process.env.BOT_INFO || "Kɢᴛᴇᴄʜ;KᴇʀᴍLɪᴛᴇ⚡️", // YourName;BotName;Image/VideoLink
    SUDO: process.env.SUDO || "237656520674",
