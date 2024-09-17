@@ -128,10 +128,10 @@ Module(
       type: "whatsapp",
    },
    async (message, match, m) => {
-      if (!message.reply_message.image) return await message.reply("_Reply to a photo_");
+      if (!message.reply_message.image) return await message.reply("_Reply to a photo Man_");
       let buff = await m.quoted.download();
       await message.setPP(message.user, buff);
-      return await message.reply("_Profile Picture Updated_");
+      return await message.reply("> Profile Picture Updated⚡️");
    }
 );
 
@@ -144,7 +144,7 @@ Module(
    },
    async (message, match) => {
       await message.removePP(message.user);
-      return await message.reply("_Profile Picture Removed_");
+      return await message.reply("> Profile Picture Removed⚡️");
    }
 );
 
@@ -156,7 +156,7 @@ Module(
       type: "whatsapp",
    },
    async (message, match) => {
-      if (!match) return await message.reply("_Enter name_");
+      if (!match) return await message.reply("_Enter name Bro_");
       await message.updateName(match);
       return await message.reply(`_Username Updated : ${match}_`);
    }
@@ -172,13 +172,13 @@ Module(
    async (message, match) => {
       if (message.isGroup) {
          let jid = message.mention[0] || message.reply_message.jid;
-         if (!jid) return await message.reply("_Reply to a person or mention_");
+         if (!jid) return await message.reply("_Reply to a person or mention Man_");
          await message.block(jid);
          return await message.sendMessage(`_@${jid.split("@")[0]} Blocked_`, {
             mentions: [jid],
          });
       } else {
-         await message.reply("_Blocked_");
+         await message.reply("> Blocked⚡️");
          return await message.block(message.jid);
       }
    }
@@ -194,14 +194,14 @@ Module(
    async (message, match) => {
       if (message.isGroup) {
          let jid = message.mention[0] || message.reply_message.jid;
-         if (!jid) return await message.reply("_Reply to a person or mention_");
+         if (!jid) return await message.reply("_Reply to a person or mention Man_");
          await message.block(jid);
          return await message.sendMessage(message.jid, `_@${jid.split("@")[0]} unblocked_`, {
             mentions: [jid],
          });
       } else {
          await message.unblock(message.jid);
-         return await message.reply("_User unblocked_");
+         return await message.reply("> User unblocked⚡️");
       }
    }
 );
@@ -271,9 +271,9 @@ Module(
    },
    async (message, match) => {
       match = match || message.reply_message.text;
-      if (!match) return await message.send("*Need Status!*\n*Example: setbio Hey there! I am using WhatsApp*.");
+      if (!match) return await message.send("*Need Status!*\n*Example: setbio Hey there! I Love using KermLite⚡️*.");
       await message.client.updateProfileStatus(match);
-      await message.reply("_Profile bio updated_");
+      await message.reply("> Profile bio updated⚡️");
    }
 );
 
@@ -291,7 +291,7 @@ Module(
       for (let jid of jids) {
          await message.client.forwardMessage(jid, message.reply_message.message);
       }
-      await message.reply("_Message forwarded_");
+      await message.reply("> Message forwarded⚡️");
    }
 );
 
@@ -428,10 +428,10 @@ Module(
       type: "whatsapp",
    },
    async message => {
-      if (!message.reply_message) return await message.reply("*Reply to a message*");
+      if (!message.reply_message) return await message.reply("_Reply to a message Man_");
       let key = message.reply_message.key;
       let msg = await loadMessage(key.id);
-      if (!msg) return await message.reply("_Message not found maybe bot might not be running at that time_");
+      if (!msg) return await message.reply("> Message not found maybe bot might not be running at that time");
       msg = await serialize(JSON.parse(JSON.stringify(msg.message)), message.client);
       if (!msg.quoted) return await message.reply("No quoted message found");
       await message.forward(message.jid, msg.quoted.message);
@@ -494,7 +494,7 @@ Module(
    },
    async (message, match) => {
       const userId = message.mention[0] || message.reply_message.jid;
-      if (!userId) return message.reply("_Mention or reply to someone_");
+      if (!userId) return message.reply("_Mention or reply to someone Man_");
       let reason = message?.reply_message.text || match;
       reason = reason.replace(/@(\d+)/, "");
       reason = reason ? reason.length <= 1 : "Reason not Provided";
