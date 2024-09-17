@@ -53,7 +53,7 @@ Module(
          const emailInfo = emailDataStore[sender];
 
          if (!emailInfo || !emailInfo.email) {
-            return await context.send(`_You Didn't Create Any Mail_`);
+            return await context.send(`_You Didn't Create Any Mail Man_`);
          }
 
          const receivedMails = await tempmail.mails(emailInfo.login, emailInfo.domain);
@@ -93,9 +93,9 @@ Module(
          const sender = context.sender;
          if (emailDataStore[sender]) {
             delete emailDataStore[sender];
-            await context.send("_Deleted the email address._");
+            await context.send("> ⌫Deleted the email address.");
          } else {
-            await context.send("No email address to delete.");
+            await context.send("> No email address to delete.");
          }
       } catch (error) {
          console.log(error);
@@ -215,11 +215,11 @@ Module(
       type: "tools",
    },
    async (m, match) => {
-      if (!match) return await m.sendReply("_Provide me text_");
-      await m.send("_processing_");
+      if (!match) return await m.sendReply("> Provide me text");
+      await m.send("_processing, wait.._");
       const post = await new AIService();
       const request = await post.tts(match);
-      const audio = await toPTT(request, "mp3");
-      return await m.sendFile(audio);
+      const audio = await toPTT(request, "voice");
+      return await m.sendFile(voice);
    }
 );
