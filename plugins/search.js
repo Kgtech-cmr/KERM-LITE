@@ -68,15 +68,15 @@ Module(
    }
 );
 
-// Module(
-//    {
-//       pattern: "tgs",
-//       fromMe: mode,
-//       desc: "Download Telegram Stickers",
-//       type: "search",
-//    },
-//    async (message, match, m) => {
-//       if (!match) return await message.send("_Provide telegram Sticker link!_");
-//       await message.send("_Fetching Stickers_");
-//    }
-// );
+  Module(
+     {
+         pattern: "tgs",
+         fromMe: mode,
+         desc: "Download Telegram Stickers",
+         type: "search",
+      },
+      async (message, match, m) => {
+         if (!match) return await message.send("> Provide telegram Sticker link.");
+         await message.send("_Fetching Stickers bro_");
+      }
+);
