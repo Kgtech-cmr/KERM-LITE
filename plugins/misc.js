@@ -104,11 +104,11 @@ Module(
       type: "misc",
    },
    async (message, match, client) => {
-      let { data } = await axios.get("https://api.github.com/repos/FXastro/fxop-md");
+      let { data } = await axios.get("https://api.github.com/repos/Kgtech-cmr/KERM-LITE");
       let mssg = `
 \t\`\`\`SCRIPT\`\`\`\n
 ╭──────────────
-│ *Owner:* _*FXastro*_
+│ *Owner:* _*KgTech*_
 │ *Repo:* _https://github.com/Kgtech-cmr/KERM-LITE_
 │ *Stars:* _${data.stargazers_count}_
 │ *Forks:* _${data.forks}_
@@ -124,7 +124,7 @@ Module(
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
-               newsletterJid: "120363295657486372@newsletter",
+               newsletterJid: "120363321386877609@newsletter",
                newsletterName: "ᴋᴇʀᴍ-ʀᴇᴘᴏɪsᴛᴏʀʏ",
             },
          },
