@@ -219,7 +219,7 @@ Module(
       await m.send("_processing, wait.._");
       const post = await new AIService();
       const request = await post.tts(match);
-      const audio = await toPTT(request, "voice");
-      return await m.sendFile(voice);
+      const audio = await toPTT(request, "audio");
+      return await m.sendFile(mp3);
    }
 );
