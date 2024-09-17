@@ -131,7 +131,7 @@ memeCommands.forEach(({ pattern, image, x, y, maxWidth, maxLines }) => {
 
 Module(
    {
-      pattern: "ep1",
+      pattern: "glossy",
       fromMe: mode,
       desc: "Logo Maker",
       type: "eps",
@@ -156,7 +156,7 @@ Module(
 
 Module(
    {
-      pattern: "ep2",
+      pattern: "write",
       fromMe: mode,
       desc: "Write Text",
       type: "eps",
@@ -181,7 +181,7 @@ Module(
 
 Module(
    {
-      pattern: "ep3",
+      pattern: "blackpink",
       fromMe: mode,
       desc: "Blackpink Logo",
       type: "eps",
@@ -206,7 +206,7 @@ Module(
 
 Module(
    {
-      pattern: "ep4",
+      pattern: "glitch",
       fromMe: mode,
       desc: "Glitch Text",
       type: "eps",
@@ -231,7 +231,7 @@ Module(
 
 Module(
    {
-      pattern: "ep5",
+      pattern: "glow",
       fromMe: mode,
       desc: "Advanced Glow",
       type: "eps",
@@ -256,7 +256,7 @@ Module(
 
 Module(
    {
-      pattern: "ep6",
+      pattern: "typography",
       fromMe: mode,
       desc: "Typography Text",
       type: "eps",
@@ -281,7 +281,7 @@ Module(
 
 Module(
    {
-      pattern: "ep7",
+      pattern: "pixel",
       fromMe: mode,
       desc: "Pixel Glitch",
       type: "eps",
@@ -306,7 +306,7 @@ Module(
 
 Module(
    {
-      pattern: "ep8",
+      pattern: "neon",
       fromMe: mode,
       desc: "Neon Glitch",
       type: "eps",
@@ -331,7 +331,7 @@ Module(
 
 Module(
    {
-      pattern: "ep9",
+      pattern: "flag",
       fromMe: mode,
       desc: "Nigerian Flag",
       type: "eps",
@@ -356,7 +356,7 @@ Module(
 
 Module(
    {
-      pattern: "ep10",
+      pattern: "american",
       fromMe: mode,
       desc: "American Flag",
       type: "eps",
@@ -381,7 +381,7 @@ Module(
 
 Module(
    {
-      pattern: "ep11",
+      pattern: "deleting",
       fromMe: mode,
       desc: "Deleting Text",
       type: "eps",
@@ -406,7 +406,7 @@ Module(
 
 Module(
    {
-      pattern: "ep12",
+      pattern: "blackpink2",
       fromMe: mode,
       desc: "Blackpink Style",
       type: "eps",
@@ -431,7 +431,7 @@ Module(
 
 Module(
    {
-      pattern: "ep13",
+      pattern: "glowing",
       fromMe: mode,
       desc: "Glowing Text",
       type: "eps",
@@ -456,7 +456,7 @@ Module(
 
 Module(
    {
-      pattern: "ep14",
+      pattern: "underwater",
       fromMe: mode,
       desc: "Underwater",
       type: "eps",
@@ -481,7 +481,7 @@ Module(
 
 Module(
    {
-      pattern: "ep15",
+      pattern: "logo2",
       fromMe: mode,
       desc: "Logo Maker",
       type: "eps",
@@ -506,7 +506,7 @@ Module(
 
 Module(
    {
-      pattern: "ep16",
+      pattern: "cartoon",
       fromMe: mode,
       desc: "Cartoon Style",
       type: "eps",
@@ -531,7 +531,7 @@ Module(
 
 Module(
    {
-      pattern: "ep17",
+      pattern: "paper",
       fromMe: mode,
       desc: "Paper Cut",
       type: "eps",
@@ -556,7 +556,7 @@ Module(
 
 Module(
    {
-      pattern: "ep18",
+      pattern: "watercolor",
       fromMe: mode,
       desc: "Watercolor",
       type: "eps",
@@ -581,7 +581,7 @@ Module(
 
 Module(
    {
-      pattern: "ep19",
+      pattern: "carmen",
       fromMe: mode,
       desc: "Effect Clouds",
       type: "eps",
@@ -597,7 +597,7 @@ Module(
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                newsletterJid: "120363321386877609@newsletter",
-               newsletterName: "ᴇꜰꜰᴇᴄᴛ ᴄʟᴏᴜᴅꜱ",
+               newsletterName: "ᴄᴀʀᴍᴇɴ ᴄʟᴏᴜᴅꜱ",
             },
          },
       });
@@ -606,7 +606,7 @@ Module(
 
 Module(
    {
-      pattern: "ep20",
+      pattern: "gradient",
       fromMe: mode,
       desc: "Gradient Text",
       type: "eps",
@@ -631,7 +631,7 @@ Module(
 
 Module(
    {
-      pattern: "ep21",
+      pattern: "summer",
       fromMe: mode,
       desc: "Summer Beach",
       type: "eps",
@@ -647,7 +647,7 @@ Module(
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                newsletterJid: "120363295657486372@g.us",
-               newsletterName: "ꜱᴜᴍᴍᴇʀ ʙᴇᴀᴄʜ",
+               newsletterName: "sᴜᴍᴍᴇʀ ʙᴇᴀᴄʜ",
             },
          },
       });
@@ -656,7 +656,7 @@ Module(
 
 Module(
    {
-      pattern: "ep22",
+      pattern: "luxury",
       fromMe: mode,
       desc: "Luxury Gold",
       type: "eps",
@@ -681,7 +681,7 @@ Module(
 
 Module(
    {
-      pattern: "ep23",
+      pattern: "multicolored",
       fromMe: mode,
       desc: "Multicolored",
       type: "eps",
@@ -706,7 +706,7 @@ Module(
 
 Module(
    {
-      pattern: "ep24",
+      pattern: "sand",
       fromMe: mode,
       desc: "Sand Summer",
       type: "eps",
@@ -731,7 +731,7 @@ Module(
 
 Module(
    {
-      pattern: "ep25",
+      pattern: "sandsummer",
       fromMe: mode,
       desc: "Sandsummer",
       type: "eps",
@@ -756,7 +756,7 @@ Module(
 
 Module(
    {
-      pattern: "ep26",
+      pattern: "galaxy",
       fromMe: mode,
       desc: "Galaxy",
       type: "eps",
@@ -781,7 +781,7 @@ Module(
 
 Module(
    {
-      pattern: "ep27",
+      pattern: "kerm",
       fromMe: mode,
       desc: "Nineteen Seventeen",
       type: "eps",
@@ -797,7 +797,7 @@ Module(
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                newsletterJid: "120363295657486372@g.us",
-               newsletterName: "1𝟗𝟏𝟕",
+               newsletterName: "ᴋᴇʀᴍ 1𝟗𝟏𝟕",
             },
          },
       });
@@ -806,7 +806,7 @@ Module(
 
 Module(
    {
-      pattern: "ep28",
+      pattern: "fareno",
       fromMe: mode,
       desc: "Making Neon",
       type: "eps",
@@ -822,7 +822,7 @@ Module(
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                newsletterJid: "120363295657486372@g.us",
-               newsletterName: "ᴍᴀᴋɪɴɢ ɴᴇᴏɴ",
+               newsletterName: "ꜰᴀʀᴇɴᴏ ɴᴇᴏɴ",
             },
          },
       });
@@ -831,7 +831,7 @@ Module(
 
 Module(
    {
-      pattern: "ep29",
+      pattern: "light",
       fromMe: mode,
       desc: "Text Effect",
       type: "eps",
@@ -847,7 +847,7 @@ Module(
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                newsletterJid: "120363295657486372@g.us",
-               newsletterName: "ᴛᴇxᴛ ᴇꜰꜰᴇᴄᴛ",
+               newsletterName: "ᴛᴇxᴛ ʟɪᴛᴇ",
             },
          },
       });
@@ -856,7 +856,7 @@ Module(
 
 Module(
    {
-      pattern: "ep30",
+      pattern: "galaxy2",
       fromMe: mode,
       desc: "Galaxy Style",
       type: "eps",
@@ -872,7 +872,7 @@ Module(
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                newsletterJid: "120363295657486372@g.us",
-               newsletterName: "ɢᴀlᴀxʏ ꜱᴛʏʟᴇ",
+               newsletterName: "ɢᴀlᴀxʏ2 ꜱᴛʏʟᴇ",
             },
          },
       });
@@ -881,7 +881,7 @@ Module(
 
 Module(
    {
-      pattern: "ep31",
+      pattern: "pink",
       fromMe: mode,
       desc: "Blackpink Style",
       type: "eps",
@@ -897,7 +897,7 @@ Module(
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                newsletterJid: "120363295657486372@g.us",
-               newsletterName: "ʙʟᴀᴄᴋᴘɪɴᴋ ꜱᴛʏʟᴇ",
+               newsletterName: "ᴘɪɴᴋ ꜱᴛʏʟᴇ",
             },
          },
       });
@@ -906,7 +906,7 @@ Module(
 
 Module(
    {
-      pattern: "ep32",
+      pattern: "mirror",
       fromMe: mode,
       desc: "Glowing Text",
       type: "eps",
@@ -922,7 +922,7 @@ Module(
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                newsletterJid: "120363295657486372@g.us",
-               newsletterName: "ɢʟᴏᴡɪɴɢ ᴛᴇxᴛ",
+               newsletterName: "ᴍɪʀʀᴏʀ ᴛᴇxᴛ",
             },
          },
       });
@@ -931,7 +931,7 @@ Module(
 
 Module(
    {
-      pattern: "ep33",
+      pattern: "neonlight",
       fromMe: mode,
       desc: "Advanced Glow",
       type: "eps",
@@ -947,7 +947,7 @@ Module(
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                newsletterJid: "120363295657486372@g.us",
-               newsletterName: "ᴀᴅᴠᴀɴᴄᴇᴅ ɢʟᴏᴡ",
+               newsletterName: "ɴᴇᴏɴʟɪɢʜᴛ",
             },
          },
       });
