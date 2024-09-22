@@ -239,7 +239,7 @@ Module(
       let stat = status ? "on" : "off";
 
       if (!match) {
-         let replyMsg = `Welcome manager\n\nGroup: ${(await message.client.groupMetadata(message.jid)).subject}\nStatus: ${stat}\n\nAvailable Actions:\n\n- ${prefix}welcome get: Get the welcome message\n- ${prefix}welcome on: Enable welcome message\n- ${prefix}welcome off: Disable welcome message\n- ${prefix}welcome delete: Delete the welcome message\n${config.AUTHOR}`;
+         let replyMsg = `Welcome manager\n\nGroup: ${(await message.client.groupMetadata(message.jid)).subject}\nStatus: ${stat}\n\nAvailable Actions:\n\n- ${prefix}welcome get: Get the welcome message\n- ${prefix}welcome on: Enable welcome message\n- ${prefix}welcome off: Disable welcome message\n- ${prefix}welcome delete: Delete the welcome message\n> KERM LITE⚡️`;
 
          return await message.reply(replyMsg);
       }
@@ -259,7 +259,7 @@ Module(
       }
 
       if (match === "off") {
-         if (!status) return await message.reply("_Welcome already disabled_");
+         if (!status) return await message.reply("> 🏅Welcome already disabled");
          await toggleStatus(message.jid, "welcome");
          return await message.reply("> 🏅Welcome disabled");
       }
@@ -284,7 +284,7 @@ Module(
       if (!message.isGroup) return;
       let status = await getStatus(message.jid, "goodbye");
       let stat = status ? "on" : "off";
-      let replyMsg = `Goodbye manager\n\nGroup: ${(await message.client.groupMetadata(message.jid)).subject}\nStatus: ${stat}\n\nAvailable Actions:\n\n- goodbye get: Get the goodbye message\n- goodbye on: Enable goodbye message\n- goodbye off: Disable goodbye message\n- goodbye delete: Delete the goodbye message\n${config.AUTHOR}`;
+      let replyMsg = `Goodbye manager\n\nGroup: ${(await message.client.groupMetadata(message.jid)).subject}\nStatus: ${stat}\n\nAvailable Actions:\n\n- goodbye get: Get the goodbye message\n- goodbye on: Enable goodbye message\n- goodbye off: Disable goodbye message\n- goodbye delete: Delete the goodbye message\n> KERM LITE⚡️`;
 
       if (!match) {
          return await message.reply(replyMsg);
