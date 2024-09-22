@@ -105,7 +105,7 @@ Module(
 
       await message.client.groupParticipantsUpdate(message.jid, jid, "promote");
 
-      return await message.reply(`_@${jid[0].split("@")[0]} promoted as admin_`, {
+      return await message.reply(`_@${jid[0].split("@")[0]} promoted as admin_\n\n> 🏅KERM LITE⚡️`, {
          mentions: [jid],
       });
    }
@@ -130,7 +130,7 @@ Module(
 
       await message.client.groupParticipantsUpdate(message.jid, jid, "demote");
 
-      return await message.reply(`_@${jid[0].split("@")[0]} demoted from admin_\n${config.AUTHOR}`, {
+      return await message.reply(`_@${jid[0].split("@")[0]} demoted from admin_\n\n> 🏅KERM LITE⚡️`, {
          mentions: [jid],
       });
    }
@@ -162,7 +162,7 @@ Module(
       if (!message.isGroup) return await message.reply("_This command is for groups bro_");
       if (!isAdmin(message.jid, message.user, message.client)) return await message.reply("_I'm not admin here_");
       await client.groupSettingUpdate(message.jid, "not_announcement");
-      await message.sendReply("Group Unmuted\n${config.AUTHOR}");
+      await message.sendReply("Group Unmuted\n\n> 🏅KERM LITE⚡️");
    }
 );
 
@@ -174,7 +174,7 @@ Module(
       type: "group",
    },
    async (message, match, m, client) => {
-      if (!message.isGroup) return await message.reply("_This command is for groups bro_");
+      if (!message.isGroup) return await message.reply("> This command is for groups bro");
       let { participants } = await client.groupMetadata(message.jid);
       let participant = participants.map(u => u.id);
       let str = "╭──〔 *Group Jids* 〕\n";
@@ -198,7 +198,7 @@ Module(
       const { participants } = await message.client.groupMetadata(message.jid);
       let teks = "";
       for (let mem of participants) {
-         teks += ` Author:\n${config.AUTHOR}\n𝖠𝖫𝖫 𝖬𝖤𝖬𝖡𝖤𝖱𝖲 𝖧𝖠𝖱𝖤 𝖧𝖤𝖱𝖤😎\n@${mem.id.split("@")[0]}\n`;
+         teks += ` Author:KERM LITE⚡️\n\n𝖠𝖫𝖫 𝖬𝖤𝖬𝖡𝖤𝖱𝖲 𝖧𝖠𝖱𝖤 𝖧𝖤𝖱𝖤😎\n@${mem.id.split("@")[0]}\n`;
       }
       message.sendMessage(message.jid, teks.trim(), {
          mentions: participants.map(a => a.id),
@@ -246,30 +246,30 @@ Module(
 
       if (match === "get") {
          let msg = await getMessage(message.jid, "welcome");
-         if (!msg) return await message.reply("> There is no welcome set");
+         if (!msg) return await message.reply("> 🏅There is no welcome set");
          return message.reply(msg.message);
       }
 
       if (match === "on") {
          let msg = await getMessage(message.jid, "welcome");
-         if (!msg) return await message.reply("> There is no welcome message to enable");
-         if (status) return await message.reply("> Welcome already enabled");
+         if (!msg) return await message.reply("> 🏅There is no welcome message to enable");
+         if (status) return await message.reply("> 🏅Welcome already enabled");
          await toggleStatus(message.jid);
-         return await message.reply("> Welcome enabled");
+         return await message.reply("> 🏅Welcome enabled");
       }
 
       if (match === "off") {
          if (!status) return await message.reply("_Welcome already disabled_");
          await toggleStatus(message.jid, "welcome");
-         return await message.reply("> Welcome disabled");
+         return await message.reply("> 🏅Welcome disabled");
       }
 
       if (match == "delete") {
          await delMessage(message.jid, "welcome");
-         return await message.reply("> Welcome deleted successfully");
+         return await message.reply("> 🏅Welcome deleted successfully");
       }
       await setMessage(message.jid, "welcome", match);
-      return await message.reply("> Welcome set successfully");
+      return await message.reply("> 🏅Welcome set successfully");
    }
 );
 
@@ -292,18 +292,18 @@ Module(
 
       if (match === "get") {
          let msg = await getMessage(message.jid, "goodbye");
-         if (!msg) return await message.reply("> There is no goodbye set");
+         if (!msg) return await message.reply("> 🏅There is no goodbye set");
          return message.reply(msg.message);
       }
 
       if (match === "on") {
          await toggleStatus(message.jid, "goodbye");
-         return await message.reply("> Goodbye enabled");
+         return await message.reply("> 🏅Goodbye enabled");
       }
 
       if (match === "off") {
          await toggleStatus(message.jid);
-         return await message.reply("> Goodbye disabled");
+         return await message.reply("> 🏅Goodbye disabled");
       }
 
       if (match === "delete") {
@@ -436,7 +436,7 @@ Module(
       if (!isAdmin(message.jid, message.user, message.client)) return await message.reply("_I'm not admin here_");
 
       const inviteCode = await message.client.groupInviteCode(message.jid);
-      return await message.reply(`https://chat.whatsapp.com/${inviteCode}\n\n${config.AUTHOR}`);
+      return await message.reply(`https://chat.whatsapp.com/${inviteCode}\n\n> 🏅KERM LITE⚡️`);
    }
 );
 
@@ -448,8 +448,8 @@ Module(
       type: "group",
    },
    async (message, match) => {
-      if (!message.isGroup) return await message.reply("_This command is for groups only bro_");
-      if (!isAdmin(message.jid, message.user, message.client)) return await message.reply("_I'm not admin here_");
+      if (!message.isGroup) return await message.reply("> 🚨This command is for groups only bro");
+      if (!isAdmin(message.jid, message.user, message.client)) return await message.reply("> ⚠️I'm not admin here");
 
       const requests = await message.client.groupRequestParticipantsList(message.jid);
       if (requests.length === 0) return await message.reply("_No pending join requests_");
@@ -531,7 +531,7 @@ Module(
    async (message, match) => {
       if (!message.isGroup) return await message.reply("_This command is for groups only bro_");
 
-      await message.reply("_Goodbye! Leaving the group..._");
+      await message.reply("> 😇Goodbye! Leaving the group...\n\n> 🏅KERM LITE⚡️");
       return await message.client.groupLeave(message.jid);
    }
 );
