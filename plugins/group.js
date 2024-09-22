@@ -42,14 +42,14 @@ Module(
       type: "group",
    },
    async (message, match) => {
-      if (!message.isGroup) return await message.reply("> This command is for groups bro");
+      if (!message.isGroup) return await message.reply("> ⚠️This command is for groups bro");
 
       match = match || message.reply_message.jid;
-      if (!match) return await message.reply("> Mention user to add");
+      if (!match) return await message.reply("> 🏅Mention user to add");
 
       const isadmin = await isAdmin(message.jid, message.user, message.client);
 
-      if (!isadmin) return await message.reply("> I'm not admin here idiot");
+      if (!isadmin) return await message.reply("> ⚠️I'm not admin here idiot");
       const jid = parsedJid(match);
 
       await message.client.groupParticipantsUpdate(message.jid, jid, "add");
@@ -68,14 +68,14 @@ Module(
       type: "group",
    },
    async (message, match) => {
-      if (!message.isGroup) return await message.reply("> This command is for groups bro");
+      if (!message.isGroup) return await message.reply("> ⚠️This command is for groups bro");
 
       match = match || message.reply_message.jid;
-      if (!match) return await message.reply("> Mention user to kick");
+      if (!match) return await message.reply("> 🏅Mention user to kick");
 
       const isadmin = await isAdmin(message.jid, message.user, message.client);
 
-      if (!isadmin) return await message.reply("> I'm not admin here idiot");
+      if (!isadmin) return await message.reply("> ⚠️I'm not admin here idiot");
       const jid = parsedJid(match);
 
       await message.client.groupParticipantsUpdate(message.jid, jid, "remove");
@@ -93,14 +93,14 @@ Module(
       type: "group",
    },
    async (message, match) => {
-      if (!message.isGroup) return await message.reply("> This command is for groups bro");
+      if (!message.isGroup) return await message.reply("> ⚠️This command is for groups bro");
 
       match = match || message.reply_message.jid;
-      if (!match) return await message.reply("> Mention user to promote");
+      if (!match) return await message.reply("> 🏅Mention user to promote");
 
       const isadmin = await isAdmin(message.jid, message.user, message.client);
 
-      if (!isadmin) return await message.reply("> I'm not admin here idiot");
+      if (!isadmin) return await message.reply("> ⚠️I'm not admin here idiot");
       const jid = parsedJid(match);
 
       await message.client.groupParticipantsUpdate(message.jid, jid, "promote");
@@ -118,14 +118,14 @@ Module(
       type: "group",
    },
    async (message, match) => {
-      if (!message.isGroup) return await message.reply("> This command is for groups bro");
+      if (!message.isGroup) return await message.reply("> ⚠️This command is for groups bro");
 
       match = match || message.reply_message.jid;
-      if (!match) return await message.reply("> Mention user to demote");
+      if (!match) return await message.reply("> 🏅Mention user to demote");
 
       const isadmin = await isAdmin(message.jid, message.user, message.client);
 
-      if (!isadmin) return await message.reply("> I'm not admin here");
+      if (!isadmin) return await message.reply("> ⚠️I'm not admin here");
       const jid = parsedJid(match);
 
       await message.client.groupParticipantsUpdate(message.jid, jid, "demote");
@@ -144,10 +144,10 @@ Module(
       type: "group",
    },
    async (message, match, m, client) => {
-      if (!message.isGroup) return await message.reply("_This command is for groups bro_");
-      if (!isAdmin(message.jid, message.user, message.client)) return await message.reply("_I'm not admin here_");
+      if (!message.isGroup) return await message.reply("> ⚠️This command is for groups bro");
+      if (!isAdmin(message.jid, message.user, message.client)) return await message.reply("> 🏅I'm not admin here");
       await client.groupSettingUpdate(message.jid, "announcement");
-      await message.sendReply("Group Muted\n${config.AUTHOR}");
+      await message.sendReply("Group Muted\n\n> 🏅KERM LITE⚡️");
    }
 );
 
@@ -159,8 +159,8 @@ Module(
       type: "group",
    },
    async (message, match, m, client) => {
-      if (!message.isGroup) return await message.reply("_This command is for groups bro_");
-      if (!isAdmin(message.jid, message.user, message.client)) return await message.reply("_I'm not admin here_");
+      if (!message.isGroup) return await message.reply("> ⚠️This command is for groups bro");
+      if (!isAdmin(message.jid, message.user, message.client)) return await message.reply("> ⚠️I'm not admin here");
       await client.groupSettingUpdate(message.jid, "not_announcement");
       await message.sendReply("Group Unmuted\n\n> 🏅KERM LITE⚡️");
    }
@@ -174,7 +174,7 @@ Module(
       type: "group",
    },
    async (message, match, m, client) => {
-      if (!message.isGroup) return await message.reply("> This command is for groups bro");
+      if (!message.isGroup) return await message.reply("> ⚠️This command is for groups bro");
       let { participants } = await client.groupMetadata(message.jid);
       let participant = participants.map(u => u.id);
       let str = "╭──〔 *Group Jids* 〕\n";
@@ -198,7 +198,7 @@ Module(
       const { participants } = await message.client.groupMetadata(message.jid);
       let teks = "";
       for (let mem of participants) {
-         teks += ` Author:KERM LITE⚡️\n\n𝖠𝖫𝖫 𝖬𝖤𝖬𝖡𝖤𝖱𝖲 𝖧𝖠𝖱𝖤 𝖧𝖤𝖱𝖤😎\n@${mem.id.split("@")[0]}\n`;
+         teks += `> Author:KERM LITE⚡️\n\nHi🦋⚡️\n@${mem.id.split("@")[0]}\n`;
       }
       message.sendMessage(message.jid, teks.trim(), {
          mentions: participants.map(a => a.id),
@@ -216,7 +216,7 @@ Module(
    async (message, match) => {
       console.log("match");
       match = match || message.reply_message.text;
-      if (!match) return message.reply("> Enter or reply to a text to tag man");
+      if (!match) return message.reply("> ⚠️Enter or reply to a text to tag man");
       if (!message.isGroup) return;
       const { participants } = await message.client.groupMetadata(message.jid);
       message.sendMessage(message.jid, match, {
@@ -366,7 +366,7 @@ Module(
    async (message, match) => {
       if (!message.isGroup) return await message.reply("> 🚨This command is for groups only bro");
       if (!isAdmin(message.jid, message.user, message.client)) return await message.reply("> ⚠️I'm not admin here");
-      if (!match) return await message.reply("_Provide a new group name_");
+      if (!match) return await message.reply("> ⚠️Provide a new group name");
 
       await message.client.groupUpdateSubject(message.jid, match);
       return await message.reply(`_Group name changed to "${match}"_`);
@@ -383,7 +383,7 @@ Module(
    async (message, match) => {
       if (!message.isGroup) return await message.reply("> 🚨This command is for groups only bro");
       if (!isAdmin(message.jid, message.user, message.client)) return await message.reply("> ⚠️I'm not admin here");
-      if (!match) return await message.reply("> Provide a new group description");
+      if (!match) return await message.reply("> 🏅Provide a new group description");
 
       await message.client.groupUpdateDescription(message.jid, match);
       return await message.reply("> 🏅Group description updated");
@@ -416,8 +416,8 @@ Module(
       type: "group",
    },
    async (message, match) => {
-      if (!message.isGroup) return await message.reply("_This command is for groups only bro_");
-      if (!isAdmin(message.jid, message.user, message.client)) return await message.reply("_I'm not admin here_");
+      if (!message.isGroup) return await message.reply("> ⚠️This command is for groups only bro");
+      if (!isAdmin(message.jid, message.user, message.client)) return await message.reply("> ⚠️I'm not admin here");
 
       await message.client.groupRevokeInvite(message.jid);
       return await message.reply("> 🏅Group invite link revoked");
