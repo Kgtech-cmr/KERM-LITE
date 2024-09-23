@@ -198,7 +198,7 @@ Module(
       const { participants } = await message.client.groupMetadata(message.jid);
       let teks = "";
       for (let mem of participants) {
-         teks += "> Author:𝖪𝖤𝖱𝖬 𝖫𝖨𝖳𝖤⚡️\n\n𝖧𝗂🦋⚡️\n•@${mem.id.split("@")[0]}\n";
+         teks += ` Author:𝖪𝖤𝖱𝖬 𝖫𝖨𝖳𝖤⚡️\n\n𝖧𝗂🦋⚡️\n@${mem.id.split("@")[0]}\n`;
       }
       message.sendMessage(message.jid, teks.trim(), {
          mentions: participants.map(a => a.id),
@@ -630,7 +630,7 @@ Module(
          return await message.reply("> 🏅No non-admin participants to remove.");
       }
 
-      await message.reply(`> 🏅Removing ${toRemove.length} participants...`);
+      await message.reply(`⚠️Removing ${toRemove.length} participants...`);
 
       const batchSize = 5;
       for (let i = 0; i < toRemove.length; i += batchSize) {
@@ -639,7 +639,7 @@ Module(
          await new Promise(resolve => setTimeout(resolve, 1000));
       }
 
-      return await message.reply(`> 🏅Successfully removed ${toRemove.length} participants.\n> KERM LITE⚡️`);
+      return await message.reply(`⚠️Successfully removed ${toRemove.length} participants.\n> KERM LITE⚡️`);
    }
 );
 
@@ -651,14 +651,14 @@ Module(
       type: "group",
    },
    async (message, match) => {
-      if (!message.isGroup) return await message.reply("_This command is for groups only bro_");
-      if (!isAdmin(message.jid, message.user, message.client)) return await message.reply("_I'm not admin here_");
+      if (!message.isGroup) return await message.reply("> ⚠️This command is for groups only bro");
+      if (!isAdmin(message.jid, message.user, message.client)) return await message.reply("> ⚠️I'm not admin here idiot");
 
       const currentStatus = await getAntiPromote(message.jid);
       const newStatus = !currentStatus;
       await setAntiPromote(message.jid, newStatus);
 
-      return await message.reply(`> 🏅Anti-promote has been ${newStatus ? "enabled" : "disabled"} for this group bro.`);
+      return await message.reply(`🏅Anti-promote has been ${newStatus ? "enabled" : "disabled"} for this group bro.`);
    }
 );
 
@@ -677,7 +677,7 @@ Module(
       const newStatus = !currentStatus;
       await setAntiDemote(message.jid, newStatus);
 
-      return await message.reply(`> 🏅Anti-demote has been ${newStatus ? "enabled" : "disabled"} for this group bro.`);
+      return await message.reply(`🏅Anti-demote has been ${newStatus ? "enabled" : "disabled"} for this group bro.`);
    }
 );
 
