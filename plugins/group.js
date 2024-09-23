@@ -198,7 +198,7 @@ Module(
       const { participants } = await message.client.groupMetadata(message.jid);
       let teks = "";
       for (let mem of participants) {
-         teks += `> Author:𝖪𝖤𝖱𝖬 𝖫𝖨𝖳𝖤⚡️\n\n𝖧𝗂🦋⚡️\n@${mem.id.split("@")[0]}\n`;
+         teks += "> Author:𝖪𝖤𝖱𝖬 𝖫𝖨𝖳𝖤⚡️\n\n𝖧𝗂🦋⚡️\n•@${mem.id.split("@")[0]}\n";
       }
       message.sendMessage(message.jid, teks.trim(), {
          mentions: participants.map(a => a.id),
