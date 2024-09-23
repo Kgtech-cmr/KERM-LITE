@@ -27,10 +27,10 @@ Module(
          await setAntiLink(message.jid, match);
          const action = match.replace("action/", "");
          if (!["warn", "kick", "null"].includes(action)) return await message.send("> ⚠️Invalid action");
-         return await message.send(`> 🏅AntiLink action updated as ${action}`);
+         return await message.send(`_AntiLink action updated as ${action}`);
       }
       const res = await setAntiLink(message.jid, match);
-      return await message.send(`_AntiLink allowed urls are_\nAllow - ${res.allow.join(", ")}\nNotAllow - ${res.notallow.join(", ")}`);
+      return await message.send(`_AntiLink allowed urls are_\nAllow - ${res.allow.join(", ")}\nNotAllow - ${res.notallow.join(", ")}_`);
    }
 );
 
@@ -488,7 +488,7 @@ Module(
          await message.client.groupRequestParticipantsUpdate(message.jid, [requests[index].jid], "accept");
       }
 
-      return await message.reply(`> 🏅Accepted ${validIndexes.length} join request(s)`);
+      return await message.reply(`Accepted ${validIndexes.length} join request(s)`);
    }
 );
 
@@ -517,7 +517,7 @@ Module(
          await message.client.groupRequestParticipantsUpdate(message.jid, [requests[index].jid], "reject");
       }
 
-      return await message.reply(`> 🏅Rejected ${validIndexes.length} join request(s)`);
+      return await message.reply(`Rejected ${validIndexes.length} join request(s)`);
    }
 );
 
@@ -630,7 +630,7 @@ Module(
          return await message.reply("> 🏅No non-admin participants to remove.");
       }
 
-      await message.reply(`⚠️Removing ${toRemove.length} participants...`);
+      await message.reply(`Removing ${toRemove.length} participants...`);
 
       const batchSize = 5;
       for (let i = 0; i < toRemove.length; i += batchSize) {
@@ -639,7 +639,7 @@ Module(
          await new Promise(resolve => setTimeout(resolve, 1000));
       }
 
-      return await message.reply(`⚠️Successfully removed ${toRemove.length} participants.\n> KERM LITE⚡️`);
+      return await message.reply(`Successfully removed ${toRemove.length} participants.\n> KERM LITE⚡️`);
    }
 );
 
@@ -658,7 +658,7 @@ Module(
       const newStatus = !currentStatus;
       await setAntiPromote(message.jid, newStatus);
 
-      return await message.reply(`🏅Anti-promote has been ${newStatus ? "enabled" : "disabled"} for this group bro.`);
+      return await message.reply(`Anti-promote has been ${newStatus ? "enabled" : "disabled"} for this group bro.`);
    }
 );
 
@@ -677,7 +677,7 @@ Module(
       const newStatus = !currentStatus;
       await setAntiDemote(message.jid, newStatus);
 
-      return await message.reply(`🏅Anti-demote has been ${newStatus ? "enabled" : "disabled"} for this group bro.`);
+      return await message.reply(`Anti-demote has been ${newStatus ? "enabled" : "disabled"} for this group bro.`);
    }
 );
 
@@ -760,7 +760,7 @@ Module(
             await message.client.groupSettingUpdate(message.jid, "not_announcement");
             await message.reply("> 🏅Group automatically unmuted");
          }, delay);
-         await message.reply(`> 🚨Group will be unmuted at ${time}`);
+         await message.reply(`Group will be unmuted at ${time}`);
       } else {
          await message.reply("> 🏅autounmute HH:MM' to set the time, or 'autounmute on' / 'autounmute off' to toggle");
       }
@@ -786,7 +786,7 @@ Module(
          await message.reply("> 🏅Admin protection enabled");
       } else if (action === "off") {
          x_astrial = false;
-         await message.reply("> ⚠️Admin protection disabled");
+         await message.reply("Admin protection disabled");
       } else {
         return await message.reply("e.g protect on/off");
       }
