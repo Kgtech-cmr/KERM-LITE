@@ -85,7 +85,7 @@
 
 <br>
 
-* [`RAYAN`](https://wa.me/237656520674?text=Hi+Bro+Rayan+Big+Fan😍)
+* [`RAYAN`](https://wa.me/237659535227?text=Hi+Bro+Rayan+Big+Fan😍)
 * [`GIFFARENO`](https://wa.me/237650564445?text=Hi+Bro+Giffareno+Big+Fan😍)
  </details>
 
