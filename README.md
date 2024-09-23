@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://kg-site-support.vercel.app/">
-    <img src="https://img.shields.io/badge/FX WEBSITE-000?style=for-the-badge&logo=vercel&logoColor=white" alt="Generate Session ID"/>
+    <img src="https://img.shields.io/badge/KG WEBSITE-000?style=for-the-badge&logo=vercel&logoColor=white" alt="Generate Session ID"/>
   </a>
 
 <p align="center">
