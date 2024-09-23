@@ -551,7 +551,7 @@ Module(
 
       let msg = "_Group Admins are Here:_\n\n";
       admins.forEach((admin, index) => {
-         msg += `${index + 1}. @${admin.split("@")[0]}\n>🏅𝖪𝖤𝖱𝖬 𝖫𝖨𝖳𝖤⚡️`;
+         msg += `${index + 1}. @${admin.split("@")[0]}\n`;
       });
 
       return await message.reply(msg, { mentions: admins });
