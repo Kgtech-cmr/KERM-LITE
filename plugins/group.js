@@ -549,7 +549,7 @@ Module(
       const groupMetadata = await message.client.groupMetadata(message.jid);
       const admins = groupMetadata.participants.filter(p => p.admin).map(p => p.id);
 
-      let msg = "_Group Admins are Here:_\n\n";
+      let msg = "> 🦋Group Admins are Here:\n\n";
       admins.forEach((admin, index) => {
          msg += `${index + 1}. @${admin.split("@")[0]}\n`;
       });
