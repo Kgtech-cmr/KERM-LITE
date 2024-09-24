@@ -263,16 +263,16 @@ Module(
 
       const { prefix } = message;
       const [date, time] = new Date().toLocaleString("en-IN", { timeZone: TIME_ZONE }).split(",");
-      let menu = `\`\`\`╭─ ${BOT_INFO.split(";")[1]} ───
-│ 𝕌𝕤𝕖𝕣:  ${message.pushName}
-│ ℙ𝕣𝕖𝕗𝕚𝕩: ${prefix}
-│ 𝔻𝕒𝕥𝕖: ${date}
-│ 𝕋𝕚𝕞𝕖: ${time}
-│ ℙ𝕝𝕦𝕘𝕚𝕟𝕤: ${plugins.commands.length} 
-│ 𝕌𝕡𝕥𝕚𝕞𝕖: ${runtime(process.uptime())} 
-│ ℝ𝕒𝕞: ${formatBytes(os.totalmem() - os.freemem())} / ${formatBytes(os.totalmem())}
-│ 𝕍𝕖𝕣𝕤𝕚𝕠𝕟: ${require("../package.json").version}
-╰────────────────\`\`\`\n`;
+      let menu = `\`\`\`»»——⍟ ${BOT_INFO.split(";")[1]} ⍟——««
+:̗̀➛ 𝕌𝕤𝕖𝕣:  ${message.pushName}
+:̗̀➛ ℙ𝕣𝕖𝕗𝕚𝕩: ${prefix}
+:̗̀➛ 𝔻𝕒𝕥𝕖: ${date}
+:̗̀➛ 𝕋𝕚𝕞𝕖: ${time}
+:̗̀➛ ℙ𝕝𝕦𝕘𝕚𝕟𝕤: ${plugins.commands.length} 
+:̗̀➛ 𝕌𝕡𝕥𝕚𝕞𝕖: ${runtime(process.uptime())} 
+:̗̀➛ ℝ𝕒𝕞: ${formatBytes(os.totalmem() - os.freemem())} / ${formatBytes(os.totalmem())}
+:̗̀➛ 𝕍𝕖𝕣𝕤𝕚𝕠𝕟: ${require("../package.json").version}
+╰═════════════╗\`\`\`\n`;
 
       const categorizedCommands = plugins.commands.reduce((acc, command) => {
          if (command.pattern instanceof RegExp && !command.dontAddCommandList) {
@@ -287,9 +287,9 @@ Module(
       Object.keys(categorizedCommands)
          .sort()
          .forEach(category => {
-            menu += `\n╭── *${tiny(category)}* ──────\n`;
+            menu += `\n╭─━━ *${tiny(category)}* ━━━☆\n`;
             categorizedCommands[category].forEach(cmd => {
-               menu += `│✥ ${cmd}\n`;
+               menu += `│𒀭➜ ${cmd}\n`;
             });
             menu += `╰──────────────\n`;
          });
