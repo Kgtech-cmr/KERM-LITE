@@ -337,8 +337,8 @@ Module(
          .sort((a, b) => a.cmd.localeCompare(b.cmd));
 
       commands.forEach(({ cmd, desc }, index) => {
-         menu += `\`\`\`${index + 1} ${cmd.trim()}\`\`\`\n`;
-         if (desc) menu += `Use: \`\`\`${desc}\`\`\`\n\n`;
+         menu += \\\${index + 1} ${cmd.trim()}\\\\n;
+         if (desc) menu += `Use: \\\${desc}\\\\n\n`;
       });
 
       await message.reply(menu);
