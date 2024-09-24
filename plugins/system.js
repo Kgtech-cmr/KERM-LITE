@@ -287,11 +287,11 @@ Module(
       Object.keys(categorizedCommands)
          .sort()
          .forEach(category => {
-            menu += `\n╭─━━ *${tiny(category)}* ━━━☆\n`;
+            menu += `\n╭━ *${tiny(category)}*━━☆\n`;
             categorizedCommands[category].forEach(cmd => {
-               menu += `│𒀭➜ ${cmd}\n`;
+               menu += `│➪ ${cmd}\n`;
             });
-            menu += `╰──────────────\n`;
+            menu += `╰─────────\n`;
          });
 
       const menuMedia = BOT_INFO.split(";")[2];
