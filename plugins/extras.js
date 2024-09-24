@@ -134,7 +134,7 @@ Module(
       pattern: "glossy",
       fromMe: mode,
       desc: "Logo Maker",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -159,7 +159,7 @@ Module(
       pattern: "write",
       fromMe: mode,
       desc: "Write Text",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -184,7 +184,7 @@ Module(
       pattern: "blackpink",
       fromMe: mode,
       desc: "Blackpink Logo",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -209,7 +209,7 @@ Module(
       pattern: "glitch",
       fromMe: mode,
       desc: "Glitch Text",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -234,7 +234,7 @@ Module(
       pattern: "glow",
       fromMe: mode,
       desc: "Advanced Glow",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -259,7 +259,7 @@ Module(
       pattern: "typography",
       fromMe: mode,
       desc: "Typography Text",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -284,7 +284,7 @@ Module(
       pattern: "pixel",
       fromMe: mode,
       desc: "Pixel Glitch",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -309,7 +309,7 @@ Module(
       pattern: "neon",
       fromMe: mode,
       desc: "Neon Glitch",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -334,7 +334,7 @@ Module(
       pattern: "flag",
       fromMe: mode,
       desc: "Nigerian Flag",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -359,7 +359,7 @@ Module(
       pattern: "american",
       fromMe: mode,
       desc: "American Flag",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -384,7 +384,7 @@ Module(
       pattern: "deleting",
       fromMe: mode,
       desc: "Deleting Text",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -409,7 +409,7 @@ Module(
       pattern: "blackpink2",
       fromMe: mode,
       desc: "Blackpink Style",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -434,7 +434,7 @@ Module(
       pattern: "glowing",
       fromMe: mode,
       desc: "Glowing Text",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -459,7 +459,7 @@ Module(
       pattern: "underwater",
       fromMe: mode,
       desc: "Underwater",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -484,7 +484,7 @@ Module(
       pattern: "logo2",
       fromMe: mode,
       desc: "Logo Maker",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -509,7 +509,7 @@ Module(
       pattern: "cartoon",
       fromMe: mode,
       desc: "Cartoon Style",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -534,7 +534,7 @@ Module(
       pattern: "paper",
       fromMe: mode,
       desc: "Paper Cut",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -559,7 +559,7 @@ Module(
       pattern: "watercolor",
       fromMe: mode,
       desc: "Watercolor",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -584,7 +584,7 @@ Module(
       pattern: "carmen",
       fromMe: mode,
       desc: "Effect Clouds",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -609,7 +609,7 @@ Module(
       pattern: "gradient",
       fromMe: mode,
       desc: "Gradient Text",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -634,7 +634,7 @@ Module(
       pattern: "summer",
       fromMe: mode,
       desc: "Summer Beach",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -659,7 +659,7 @@ Module(
       pattern: "luxury",
       fromMe: mode,
       desc: "Luxury Gold",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -684,7 +684,7 @@ Module(
       pattern: "multicolored",
       fromMe: mode,
       desc: "Multicolored",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -709,7 +709,7 @@ Module(
       pattern: "sand",
       fromMe: mode,
       desc: "Sand Summer",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -734,7 +734,7 @@ Module(
       pattern: "sandsummer",
       fromMe: mode,
       desc: "Sandsummer",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -759,7 +759,7 @@ Module(
       pattern: "galaxy",
       fromMe: mode,
       desc: "Galaxy",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -784,7 +784,7 @@ Module(
       pattern: "kerm",
       fromMe: mode,
       desc: "Nineteen Seventeen",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -809,7 +809,7 @@ Module(
       pattern: "fareno",
       fromMe: mode,
       desc: "Making Neon",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -834,7 +834,7 @@ Module(
       pattern: "light",
       fromMe: mode,
       desc: "Text Effect",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -859,7 +859,7 @@ Module(
       pattern: "galaxy2",
       fromMe: mode,
       desc: "Galaxy Style",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -884,7 +884,7 @@ Module(
       pattern: "pink",
       fromMe: mode,
       desc: "Blackpink Style",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -909,7 +909,7 @@ Module(
       pattern: "mirror",
       fromMe: mode,
       desc: "Glowing Text",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -934,7 +934,7 @@ Module(
       pattern: "neonlight",
       fromMe: mode,
       desc: "Advanced Glow",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -959,7 +959,7 @@ Module(
       pattern: "gold",
       fromMe: mode,
       desc: "Glossy Silver",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -984,7 +984,7 @@ Module(
       pattern: "shower",
       fromMe: mode,
       desc: "Writing Text",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
@@ -1009,7 +1009,7 @@ Module(
       pattern: "logo5",
       fromMe: mode,
       desc: "Blackpink Logo",
-      type: "eps",
+      type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
