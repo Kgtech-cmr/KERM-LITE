@@ -53,7 +53,7 @@ Module(
          const emailInfo = emailDataStore[sender];
 
          if (!emailInfo || !emailInfo.email) {
-            return await context.send(`_You Didn't Create Any Mail Man_`);
+            return await context.send(`> ⚠️You Didn't Create Any Mail Man`);
          }
 
          const receivedMails = await tempmail.mails(emailInfo.login, emailInfo.domain);
@@ -199,8 +199,8 @@ Module(
       type: "tools",
    },
    async (message, match) => {
-      if (!match) return await message.sendReply("_Provide me A URL_");
-      await message.sendReply("_Shorting link_");
+      if (!match) return await message.sendReply("> ⚠️Provide me A URL");
+      await message.sendReply("> 🏅Shorting link");
       const url = await shortenUrl(match);
       const msg = `_Here's your link *${url}*_`;
       return await message.send(msg);
@@ -216,10 +216,10 @@ Module(
    },
    async (m, match) => {
       if (!match) return await m.sendReply("> Provide me text");
-      await m.send("_processing, wait.._");
+      await m.send("`processing, wait..`");
       const post = await new AIService();
       const request = await post.tts(match);
-      const audio = await toPTT(request, "audio");
-      return await m.sendFile(mp3);
+      const audio = await toPTT(request, "mp3");
+      return await m.sendFile(audio);
    }
 );
