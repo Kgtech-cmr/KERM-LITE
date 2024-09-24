@@ -27,8 +27,8 @@ Module({ pattern: "pinterest", fromMe: mode, desc: "Downloads Pinterest Images",
 });
 
 Module({ pattern: "spotify", fromMe: mode, desc: "Downloads Spotify Music", type: "download" }, async (message, match) => {
-   if (!match) return message.reply("_provide Spotify URL_");
-   await message.reply("_Downloading_");
+   if (!match) return message.reply("> ⚠️provide Spotify URL");
+   await message.reply("> 🎵Downloading..");
    const request = new Spotify();
    const buff = await request.spotify(match);
    const audio = await toAudio(buff, "mp3");
@@ -53,7 +53,7 @@ Module({ pattern: "story", fromMe: mode, desc: "Downloads Instagram stories", ty
 Module({ pattern: "play", fromMe: mode, desc: "Fetches Songs", type: "download" }, async (msg, cont) => {
    const { prefix } = msg.prefix;
    if (!cont) return msg.sendReply(`_Provide song name_\n\n${prefix} play Just the two of us`);
-   await msg.sendReply("_Downloading_");
+   await msg.sendReply("> 🎵Downloading..");
    const request = new Youtube();
    let audio = await request.play(cont);
    audio = await toAudio(audio, "mp3");
