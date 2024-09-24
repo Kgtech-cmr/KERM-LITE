@@ -8,7 +8,7 @@ Module(
       type: "converter",
    },
    async (message, match, m) => {
-      if (!message.reply_message && (!message.reply_message.video || !message.reply_message.sticker || !message.reply_message.text)) return await message.reply("_Reply to photo/video/text_");
+      if (!message.reply_message && (!message.reply_message.video || !message.reply_message.sticker || !message.reply_message.text)) return await message.reply("> 🚨Reply to photo/video/text");
       var buff;
       if (message.reply_message.text) {
          buff = await textToImg(message.reply_message.text);
@@ -28,7 +28,7 @@ Module(
       type: "converter",
    },
    async (message, match, m) => {
-      if (!message.reply_message.sticker) return await message.reply("_Reply to a sticker_");
+      if (!message.reply_message.sticker) return await message.reply("> ⚠️Reply to a sticker");
       const packname = config.PACKNAME;
       const author = config.AUTHOR;
       let buff = await m.quoted.download();
@@ -44,7 +44,7 @@ Module(
       type: "converter",
    },
    async (message, match, m) => {
-      if (!message.reply_message.sticker) return await message.reply("_Not a sticker_");
+      if (!message.reply_message.sticker) return await message.reply("> ⚠️Not a sticker");
       let buff = await m.quoted.download();
       return await message.sendMessage(message.jid, buff, {}, "image");
    }
@@ -58,7 +58,7 @@ Module(
       type: "converter",
    },
    async (message, match, m) => {
-      if (!message.reply_message && !message.reply_message.image) return await message.reply("Reply to Video");
+      if (!message.reply_message && !message.reply_message.image) return await message.reply("> ⚠️Reply to Video");
       let buff = await m.quoted.download();
       buff = await toAudio(buff, "mp3");
       return await message.sendMessage(message.jid, buff, { mimetype: "audio/mpeg" }, "audio");
@@ -73,8 +73,8 @@ Module(
       type: "converter",
    },
    async (message, match, m) => {
-      if (!message.reply_message.image) return await message.sendReply("_Reply An Image!_");
-      await message.sendReply("_Processing Image_");
+      if (!message.reply_message.image) return await message.sendReply("> ⚠️Reply An Image!");
+      await message.sendReply("> 🏅Processing Image");
       const saveImage = await m.quoted.download();
       const url = await upload(saveImage);
       return await message.send(url);
@@ -89,7 +89,7 @@ Module(
       type: "converter",
    },
    async (message, match, m) => {
-      if (!message.reply_message.video || !message.reply_message.sticker || !message.reply_message.audio) return await message.reply("_Reply to a sticker/audio/video_");
+      if (!message.reply_message.video || !message.reply_message.sticker || !message.reply_message.audio) return await message.reply("> ⚠️Reply to a sticker/audio/video");
       let buff = await m.quoted.download();
       if (message.reply_message.sticker) {
          buff = await webp2mp4(buff);
@@ -108,7 +108,7 @@ Module(
       type: "converter",
    },
    async (message, match, m) => {
-      if (!message.reply_message.sticker) return await message.reply("_Reply to a sticker_");
+      if (!message.reply_message.sticker) return await message.reply("> ⚠️Reply to a sticker");
       let buff = await m.quoted.download();
       return await message.sendMessage(message.jid, buff, {}, "image");
    }
@@ -139,7 +139,7 @@ Module(
 
       if (!isNaN(match)) {
          if (match > listAllFancyTexts("Fancy").length) {
-            return await message.sendMessage("Invalid number");
+            return await message.sendMessage("> 😢Invalid number");
          }
          return await message.reply(styleText(text, match));
       }
@@ -150,7 +150,7 @@ Module(
 );
 
 function listAllFancyTexts(text) {
-   let message = "KermLite fancy text generator\n\nReply to a message\nExample: .fancy 32\n\n";
+   let message = "𝖪𝖾𝗋𝗆𝖫𝗂𝗍𝖾 𝖿𝖺𝗇𝖼𝗒 𝗍𝖾𝗑𝗍 𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝗈𝗋\n\n𝖱𝖾𝗉𝗅𝗒 𝗍𝗈 𝖺 𝗆𝖾𝗌𝗌𝖺𝗀𝖾\n𝖤𝗑𝖺𝗆𝗉𝗅𝖾: .𝖿𝖺𝗇𝖼𝗒 32\n\n";
    listall(text).forEach((txt, index) => {
       message += `${index + 1} ${txt}\n`;
    });
