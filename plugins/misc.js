@@ -54,7 +54,7 @@ Module(
       const hasUpdates = await checkForUpdates();
 
       if (!hasUpdates) {
-         await message.send("You are on the latest version.");
+         await message.send("`You are on the latest version.`");
          return;
       }
 
@@ -67,7 +67,7 @@ Module(
             restart();
          }, 3000);
       } else {
-         await message.send("Update failed. Please try again later.");
+         await message.send("`Update failed. Please try again later.`");
       }
    }
 );
