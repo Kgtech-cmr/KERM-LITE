@@ -306,7 +306,7 @@ Module(
                   forwardingScore: 999,
                   isForwarded: true,
                   forwardedNewsletterMessageInfo: {
-                     newsletterJid: "120363295657486372@newsletter",
+                     newsletterJid: "120363321386877609@newsletter",
                      newsletterName: `Version ${require("../package.json").version}`,
                   },
                },
