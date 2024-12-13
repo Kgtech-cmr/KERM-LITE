@@ -141,6 +141,7 @@ Module(
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
       const img = await logo.glossysilver(match);
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -166,6 +167,7 @@ Module(
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
       const img = await logo.writetext(match);
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -191,6 +193,7 @@ Module(
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
       const img = await logo.blackpinklogo(match);
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -216,6 +219,7 @@ Module(
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
       const img = await logo.glitchtext(match);
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -241,6 +245,7 @@ Module(
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
       const img = await logo.advancedglow(match);
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -266,6 +271,7 @@ Module(
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
       const img = await logo.typographytext(match);
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -291,6 +297,7 @@ Module(
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
       const img = await logo.pixelglitch(match);
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -316,6 +323,7 @@ Module(
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
       const img = await logo.neonglitch(match);
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -331,23 +339,27 @@ Module(
 
 Module(
    {
-      pattern: "flag",
+      pattern: "cameroonianFlag",
       fromMe: mode,
-      desc: "Nigerian Flag",
+      desc: "Cameroonian Flag",
       type: "logo",
    },
    async (m, match) => {
       if (!match) return await m.sendReply("_Give Me Text Man_");
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
-      const img = await logo.nigerianflag(match);
+      const img = await logo.cameroonianflag(match);  // Modification ici
+
+      // Vérification de l'image générée
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
+
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                newsletterJid: "120363321386877609@newsletter",
-               newsletterName: "ɴɪɢᴇʀɪᴀɴ ꜰʟᴀɢ",
+               newsletterName: "ᴄᴀᴍᴇʀᴏᴏɴɪᴀɴ ꜰʟᴀɢ",  // Mise à jour ici
             },
          },
       });
@@ -365,7 +377,9 @@ Module(
       if (!match) return await m.sendReply("_Give Me Text Man_");
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
-      const img = await logo.americanflag(match);
+      const img = await logo.americanflag(match); // Vérifie que cette méthode existe dans l'API
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
+
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -390,7 +404,9 @@ Module(
       if (!match) return await m.sendReply("_Give Me Text Man_");
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
-      const img = await logo.deletingtext(match);
+      const img = await logo.deletingtext(match); // Vérifie que cette méthode existe dans l'API
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
+
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -415,7 +431,9 @@ Module(
       if (!match) return await m.sendReply("_Give Me Text Man_");
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
-      const img = await logo.blackpinkstyle(match);
+      const img = await logo.blackpinkstyle(match); // Vérifie que cette méthode existe dans l'API
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
+
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -440,7 +458,9 @@ Module(
       if (!match) return await m.sendReply("_Give Me Text Man_");
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
-      const img = await logo.glowingtext(match);
+      const img = await logo.glowingtext(match); // Vérifie que cette méthode existe dans l'API
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
+
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -466,6 +486,8 @@ Module(
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
       const img = await logo.underwater(match);
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
+
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -491,6 +513,8 @@ Module(
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
       const img = await logo.logomaker(match);
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
+
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -516,6 +540,8 @@ Module(
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
       const img = await logo.cartoonstyle(match);
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
+
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -541,6 +567,8 @@ Module(
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
       const img = await logo.papercut(match);
+      if (!img) return await m.sendReply("_❌ Failed to create logo._");
+
       return m.send(img, {
          contextInfo: {
             forwardingScore: 999,
@@ -565,17 +593,21 @@ Module(
       if (!match) return await m.sendReply("_Give Me Text Man_");
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
-      const img = await logo.watercolor(match);
-      return m.send(img, {
-         contextInfo: {
-            forwardingScore: 999,
-            isForwarded: true,
-            forwardedNewsletterMessageInfo: {
-               newsletterJid: "120363321386877609@newsletter",
-               newsletterName: "ᴡᴀᴛᴇʀᴄᴏʟᴏʀ",
+      try {
+         const img = await logo.watercolor(match);
+         return m.send(img, {
+            contextInfo: {
+               forwardingScore: 999,
+               isForwarded: true,
+               forwardedNewsletterMessageInfo: {
+                  newsletterJid: "120363321386877609@newsletter",
+                  newsletterName: "ᴡᴀᴛᴇʀᴄᴏʟᴏʀ",
+               },
             },
-         },
-      });
+         });
+      } catch (error) {
+         return m.sendReply("_Failed to create watercolor design. Please try again._");
+      }
    }
 );
 
@@ -590,17 +622,21 @@ Module(
       if (!match) return await m.sendReply("_Give Me Text Man_");
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
-      const img = await logo.effectclouds(match);
-      return m.send(img, {
-         contextInfo: {
-            forwardingScore: 999,
-            isForwarded: true,
-            forwardedNewsletterMessageInfo: {
-               newsletterJid: "120363321386877609@newsletter",
-               newsletterName: "ᴄᴀʀᴍᴇɴ ᴄʟᴏᴜᴅꜱ",
+      try {
+         const img = await logo.effectclouds(match);
+         return m.send(img, {
+            contextInfo: {
+               forwardingScore: 999,
+               isForwarded: true,
+               forwardedNewsletterMessageInfo: {
+                  newsletterJid: "120363321386877609@newsletter",
+                  newsletterName: "ᴄᴀʀᴍᴇɴ ᴄʟᴏᴜᴅꜱ",
+               },
             },
-         },
-      });
+         });
+      } catch (error) {
+         return m.sendReply("_Failed to create effect clouds design. Please try again._");
+      }
    }
 );
 
@@ -615,17 +651,21 @@ Module(
       if (!match) return await m.sendReply("_Give Me Text Man_");
       await m.sendReply("_Creating Design🪄_");
       const logo = new Ephoto360API();
-      const img = await logo.gradienttext(match);
-      return m.send(img, {
-         contextInfo: {
-            forwardingScore: 999,
-            isForwarded: true,
-            forwardedNewsletterMessageInfo: {
-               newsletterJid: "120363321386877609@newsletter",
-               newsletterName: "ɢʀᴀᴅɪᴇɴᴛ ᴛᴇxᴛ",
+      try {
+         const img = await logo.gradienttext(match);
+         return m.send(img, {
+            contextInfo: {
+               forwardingScore: 999,
+               isForwarded: true,
+               forwardedNewsletterMessageInfo: {
+                  newsletterJid: "120363321386877609@newsletter",
+                  newsletterName: "ɢʀᴀᴅɪᴇɴᴛ ᴛᴇxᴛ",
+               },
             },
-         },
-      });
+         });
+      } catch (error) {
+         return m.sendReply("_Failed to create gradient design. Please try again._");
+      }
    }
 );
 
