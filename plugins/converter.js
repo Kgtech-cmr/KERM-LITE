@@ -67,17 +67,41 @@ Module(
 
 Module(
    {
-      pattern: "upload",
-      fromMe: mode,
-      desc: "convert images to accessible url",
+      pattern: "url",
+      fromMe: true, // Si seulement le créateur du bot peut utiliser cette commande, sinon mets false
+      desc: "Convert an image to an accessible URL",
       type: "converter",
    },
-   async (message, match, m) => {
-      if (!message.reply_message.image) return await message.sendReply("> ⚠️Reply An Image!");
-      await message.sendReply("> 🏅Processing Image");
-      const saveImage = await m.quoted.download();
-      const url = await upload(saveImage);
-      return await message.send(url);
+   async (message, match) => {
+      // Vérifie si l'utilisateur a répondu à un message contenant une image
+      if (!message.reply_message || !message.reply_message.image) {
+         return await message.sendReply("> ⚠️ Please reply to an image to use this command!");
+      }
+
+      try {
+         // Envoie une réponse de confirmation que le traitement a commencé
+         await message.sendReply("> 🏅 Processing the image...");
+
+         // Télécharge l'image de la réponse
+         const imageBuffer = await message.reply_message.download();
+
+         if (!imageBuffer) {
+            return await message.sendReply("> ❌ Failed to download the image.");
+         }
+
+         // Téléverse l'image et obtient son URL
+         const url = await upload(imageBuffer); // Assure-toi que la fonction `upload` est correcte
+
+         if (url) {
+            // Envoie le lien généré à l'utilisateur
+            return await message.sendReply(`✅ Image uploaded successfully: ${url}`);
+         } else {
+            return await message.sendReply("> ❌ Failed to upload the image.");
+         }
+      } catch (error) {
+         console.error("Error in upload command:", error);
+         return await message.sendReply("> ❌ An error occurred while processing the image.");
+      }
    }
 );
 
